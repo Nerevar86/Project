@@ -1,0 +1,1351 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+		<ChildItems>
+			<Button name="ФормаОформитьПеремещение" id="75">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<CommandName>Form.Command.ОформитьПеремещение</CommandName>
+				<ExtendedTooltip name="ФормаОформитьПеремещениеРасширеннаяПодсказка" id="76"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<Pages name="Группа1" id="64">
+			<PagesRepresentation>TabsOnTop</PagesRepresentation>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="65"/>
+			<ChildItems>
+				<Page name="СкладПросрочки" id="66">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Склад просрочки</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Склад просрочки</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Picture>
+						<xr:Ref>CommonPicture.РазделСклад16</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<Group>AlwaysHorizontal</Group>
+					<ExtendedTooltip name="СкладПросрочкиРасширеннаяПодсказка" id="67"/>
+					<ChildItems>
+						<Table name="СписокПросрочки" id="3">
+							<UseAlternationRowColor>true</UseAlternationRowColor>
+							<EnableStartDrag>true</EnableStartDrag>
+							<DataPath>СписокПросрочки</DataPath>
+							<RowPictureDataPath>СписокПросрочки.DefaultPicture</RowPictureDataPath>
+							<AutoRefresh>false</AutoRefresh>
+							<AutoRefreshPeriod>60</AutoRefreshPeriod>
+							<Period>
+								<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+								<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+								<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+							</Period>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<RestoreCurrentRow>false</RestoreCurrentRow>
+							<TopLevelParent xsi:nil="true"/>
+							<ShowRoot>true</ShowRoot>
+							<AllowRootChoice>false</AllowRootChoice>
+							<UpdateOnDataChange>Auto</UpdateOnDataChange>
+							<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
+							<ContextMenu name="СписокПросрочкиКонтекстноеМеню" id="4"/>
+							<AutoCommandBar name="СписокПросрочкиКоманднаяПанель" id="5">
+								<Autofill>false</Autofill>
+								<ChildItems>
+									<Button name="СписокПросрочкиУстановитьПометки" id="68">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.УстановитьПометки</CommandName>
+										<Picture>
+											<xr:Ref>StdPicture.CheckAll</xr:Ref>
+											<xr:LoadTransparent>true</xr:LoadTransparent>
+										</Picture>
+										<ExtendedTooltip name="СписокПросрочкиУстановитьПометкиРасширеннаяПодсказка" id="69"/>
+									</Button>
+									<Button name="СписокПросрочкиСнятьПометки" id="70">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.СнятьПометки</CommandName>
+										<ExtendedTooltip name="СписокПросрочкиСнятьПометкиРасширеннаяПодсказка" id="71"/>
+									</Button>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="СписокПросрочкиРасширеннаяПодсказка" id="6"/>
+							<SearchStringAddition name="СписокПросрочкиСтрокаПоиска" id="7">
+								<AdditionSource>
+									<Item>СписокПросрочки</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СписокПросрочкиСтрокаПоискаКонтекстноеМеню" id="8"/>
+								<ExtendedTooltip name="СписокПросрочкиСтрокаПоискаРасширеннаяПодсказка" id="9"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="СписокПросрочкиСостояниеПросмотра" id="10">
+								<AdditionSource>
+									<Item>СписокПросрочки</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СписокПросрочкиСостояниеПросмотраКонтекстноеМеню" id="11"/>
+								<ExtendedTooltip name="СписокПросрочкиСостояниеПросмотраРасширеннаяПодсказка" id="12"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="СписокПросрочкиУправлениеПоиском" id="13">
+								<AdditionSource>
+									<Item>СписокПросрочки</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="СписокПросрочкиУправлениеПоискомКонтекстноеМеню" id="14"/>
+								<ExtendedTooltip name="СписокПросрочкиУправлениеПоискомРасширеннаяПодсказка" id="15"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="Selection">СписокПросрочкиВыбор</Event>
+								<Event name="OnGetDataAtServer">СписокПросрочкиПриПолученииДанныхНаСервере</Event>
+							</Events>
+							<ChildItems>
+								<LabelField name="СписокПросрочкиПометка1" id="77">
+									<DataPath>СписокПросрочки.Пометка</DataPath>
+									<Visible>false</Visible>
+									<ContextMenu name="СписокПросрочкиПометка1КонтекстноеМеню" id="78"/>
+									<ExtendedTooltip name="СписокПросрочкиПометка1РасширеннаяПодсказка" id="79"/>
+								</LabelField>
+								<PictureField name="СписокПросрочкиПометка" id="61">
+									<DataPath>СписокПросрочки.Пометка</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>В документ</v8:content>
+										</v8:item>
+									</Title>
+									<Hyperlink>true</Hyperlink>
+									<ValuesPicture>
+										<xr:Ref>CommonPicture.Пометка</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</ValuesPicture>
+									<ContextMenu name="СписокПросрочкиПометкаКонтекстноеМеню" id="62"/>
+									<ExtendedTooltip name="СписокПросрочкиПометкаРасширеннаяПодсказка" id="63"/>
+								</PictureField>
+								<LabelField name="СписокПросрочкиНоменклатураАртикул" id="55">
+									<DataPath>СписокПросрочки.Номенклатура.Артикул</DataPath>
+									<Width>10</Width>
+									<ContextMenu name="СписокПросрочкиНоменклатураАртикулКонтекстноеМеню" id="56"/>
+									<ExtendedTooltip name="СписокПросрочкиНоменклатураАртикулРасширеннаяПодсказка" id="57"/>
+								</LabelField>
+								<LabelField name="СписокПросрочкиНоменклатура" id="37">
+									<DataPath>СписокПросрочки.Номенклатура</DataPath>
+									<Width>30</Width>
+									<ContextMenu name="СписокПросрочкиНоменклатураКонтекстноеМеню" id="38"/>
+									<ExtendedTooltip name="СписокПросрочкиНоменклатураРасширеннаяПодсказка" id="39"/>
+								</LabelField>
+								<LabelField name="СписокПросрочкиХарактеристика" id="52">
+									<DataPath>СписокПросрочки.Характеристика</DataPath>
+									<Width>20</Width>
+									<ContextMenu name="СписокПросрочкиХарактеристикаКонтекстноеМеню" id="53"/>
+									<ExtendedTooltip name="СписокПросрочкиХарактеристикаРасширеннаяПодсказка" id="54"/>
+								</LabelField>
+								<LabelField name="СписокПросрочкиСерия" id="43">
+									<DataPath>СписокПросрочки.Серия</DataPath>
+									<Width>20</Width>
+									<ContextMenu name="СписокПросрочкиСерияКонтекстноеМеню" id="44"/>
+									<ExtendedTooltip name="СписокПросрочкиСерияРасширеннаяПодсказка" id="45"/>
+								</LabelField>
+								<LabelField name="СписокПросрочкиГоденДо" id="16">
+									<DataPath>СписокПросрочки.ГоденДо</DataPath>
+									<Width>10</Width>
+									<ContextMenu name="СписокПросрочкиГоденДоКонтекстноеМеню" id="17"/>
+									<ExtendedTooltip name="СписокПросрочкиГоденДоРасширеннаяПодсказка" id="18"/>
+								</LabelField>
+								<LabelField name="СписокПросрочкиСрокГодности" id="46">
+									<DataPath>СписокПросрочки.СрокГодности</DataPath>
+									<Visible>false</Visible>
+									<Width>10</Width>
+									<ContextMenu name="СписокПросрочкиСрокГодностиКонтекстноеМеню" id="47"/>
+									<ExtendedTooltip name="СписокПросрочкиСрокГодностиРасширеннаяПодсказка" id="48"/>
+								</LabelField>
+								<LabelField name="СписокПросрочкиЕдиницаИзмеренияСрокаГодности" id="25">
+									<DataPath>СписокПросрочки.ЕдиницаИзмеренияСрокаГодности</DataPath>
+									<Visible>false</Visible>
+									<Width>10</Width>
+									<ContextMenu name="СписокПросрочкиЕдиницаИзмеренияСрокаГодностиКонтекстноеМеню" id="26"/>
+									<ExtendedTooltip name="СписокПросрочкиЕдиницаИзмеренияСрокаГодностиРасширеннаяПодсказка" id="27"/>
+								</LabelField>
+								<LabelField name="СписокПросрочкиСрокГодностиПредставление" id="58">
+									<DataPath>СписокПросрочки.СрокГодностиПредставление</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Срок годности</v8:content>
+										</v8:item>
+									</Title>
+									<Width>10</Width>
+									<ContextMenu name="СписокПросрочкиСрокГодностиПредставлениеКонтекстноеМеню" id="59"/>
+									<ExtendedTooltip name="СписокПросрочкиСрокГодностиПредставлениеРасширеннаяПодсказка" id="60"/>
+								</LabelField>
+								<LabelField name="СписокПросрочкиКоличество" id="31">
+									<DataPath>СписокПросрочки.Количество</DataPath>
+									<Width>10</Width>
+									<ContextMenu name="СписокПросрочкиКоличествоКонтекстноеМеню" id="32"/>
+									<ExtendedTooltip name="СписокПросрочкиКоличествоРасширеннаяПодсказка" id="33"/>
+								</LabelField>
+								<LabelField name="СписокПросрочкиЕдиницаХранения" id="28">
+									<DataPath>СписокПросрочки.ЕдиницаХранения</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Ед. изм.</v8:content>
+										</v8:item>
+									</Title>
+									<Width>10</Width>
+									<ContextMenu name="СписокПросрочкиЕдиницаХраненияКонтекстноеМеню" id="29"/>
+									<ExtendedTooltip name="СписокПросрочкиЕдиницаХраненияРасширеннаяПодсказка" id="30"/>
+								</LabelField>
+								<LabelField name="СписокПросрочкиДнейДоПорчи" id="19">
+									<DataPath>СписокПросрочки.ДнейДоПорчи</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Дней до истечения срока годности</v8:content>
+										</v8:item>
+									</Title>
+									<Width>10</Width>
+									<ContextMenu name="СписокПросрочкиДнейДоПорчиКонтекстноеМеню" id="20"/>
+									<ExtendedTooltip name="СписокПросрочкиДнейДоПорчиРасширеннаяПодсказка" id="21"/>
+								</LabelField>
+								<LabelField name="СписокПросрочкиОтносительныйОстатокСрокаГодности" id="40">
+									<DataPath>СписокПросрочки.ОтносительныйОстатокСрокаГодности</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Остаток срока годности, %</v8:content>
+										</v8:item>
+									</Title>
+									<Width>10</Width>
+									<ContextMenu name="СписокПросрочкиОтносительныйОстатокСрокаГодностиКонтекстноеМеню" id="41"/>
+									<ExtendedTooltip name="СписокПросрочкиОтносительныйОстатокСрокаГодностиРасширеннаяПодсказка" id="42"/>
+								</LabelField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="СкладБрака" id="80">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Склад брака</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Склад брака</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Picture>
+						<xr:Ref>CommonPicture.РазделСклад16</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<ExtendedTooltip name="СкладБракаРасширеннаяПодсказка" id="81"/>
+					<ChildItems>
+						<Table name="СписокБрака" id="82">
+							<UseAlternationRowColor>true</UseAlternationRowColor>
+							<EnableStartDrag>true</EnableStartDrag>
+							<DataPath>СписокБрака</DataPath>
+							<RowPictureDataPath>СписокБрака.DefaultPicture</RowPictureDataPath>
+							<AutoRefresh>false</AutoRefresh>
+							<AutoRefreshPeriod>60</AutoRefreshPeriod>
+							<Period>
+								<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+								<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+								<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+							</Period>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<RestoreCurrentRow>false</RestoreCurrentRow>
+							<TopLevelParent xsi:nil="true"/>
+							<ShowRoot>true</ShowRoot>
+							<AllowRootChoice>false</AllowRootChoice>
+							<UpdateOnDataChange>Auto</UpdateOnDataChange>
+							<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
+							<ContextMenu name="СписокБракаКонтекстноеМеню" id="83"/>
+							<AutoCommandBar name="СписокБракаКоманднаяПанель" id="84">
+								<Autofill>false</Autofill>
+								<ChildItems>
+									<Button name="СписокБракаУстановитьПометки1" id="184">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.УстановитьПометки1</CommandName>
+										<ExtendedTooltip name="СписокБракаУстановитьПометки1РасширеннаяПодсказка" id="185"/>
+									</Button>
+									<Button name="СписокБракаСнятьПометки1" id="186">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.СнятьПометки1</CommandName>
+										<ExtendedTooltip name="СписокБракаСнятьПометки1РасширеннаяПодсказка" id="187"/>
+									</Button>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="СписокБракаРасширеннаяПодсказка" id="85"/>
+							<SearchStringAddition name="СписокБракаСтрокаПоиска" id="86">
+								<AdditionSource>
+									<Item>СписокБрака</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СписокБракаСтрокаПоискаКонтекстноеМеню" id="87"/>
+								<ExtendedTooltip name="СписокБракаСтрокаПоискаРасширеннаяПодсказка" id="88"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="СписокБракаСостояниеПросмотра" id="89">
+								<AdditionSource>
+									<Item>СписокБрака</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СписокБракаСостояниеПросмотраКонтекстноеМеню" id="90"/>
+								<ExtendedTooltip name="СписокБракаСостояниеПросмотраРасширеннаяПодсказка" id="91"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="СписокБракаУправлениеПоиском" id="92">
+								<AdditionSource>
+									<Item>СписокБрака</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="СписокБракаУправлениеПоискомКонтекстноеМеню" id="93"/>
+								<ExtendedTooltip name="СписокБракаУправлениеПоискомРасширеннаяПодсказка" id="94"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="Selection">СписокБракаВыбор</Event>
+								<Event name="OnGetDataAtServer">СписокБракаПриПолученииДанныхНаСервере</Event>
+							</Events>
+							<ChildItems>
+								<LabelField name="СписокБракаПометка1" id="143">
+									<DataPath>СписокБрака.Пометка</DataPath>
+									<Visible>false</Visible>
+									<ContextMenu name="СписокБракаПометка1КонтекстноеМеню" id="144"/>
+									<ExtendedTooltip name="СписокБракаПометка1РасширеннаяПодсказка" id="145"/>
+								</LabelField>
+								<PictureField name="СписокБракаПометка" id="122">
+									<DataPath>СписокБрака.Пометка</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>В документ</v8:content>
+										</v8:item>
+									</Title>
+									<Hyperlink>true</Hyperlink>
+									<ValuesPicture>
+										<xr:Ref>CommonPicture.Пометка</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</ValuesPicture>
+									<ContextMenu name="СписокБракаПометкаКонтекстноеМеню" id="123"/>
+									<ExtendedTooltip name="СписокБракаПометкаРасширеннаяПодсказка" id="124"/>
+								</PictureField>
+								<LabelField name="СписокБракаНоменклатураАртикул" id="146">
+									<DataPath>СписокБрака.Номенклатура.Артикул</DataPath>
+									<Width>10</Width>
+									<ContextMenu name="СписокБракаНоменклатураАртикулКонтекстноеМеню" id="147"/>
+									<ExtendedTooltip name="СписокБракаНоменклатураАртикулРасширеннаяПодсказка" id="148"/>
+								</LabelField>
+								<LabelField name="СписокБракаНоменклатура" id="116">
+									<DataPath>СписокБрака.Номенклатура</DataPath>
+									<Width>30</Width>
+									<ContextMenu name="СписокБракаНоменклатураКонтекстноеМеню" id="117"/>
+									<ExtendedTooltip name="СписокБракаНоменклатураРасширеннаяПодсказка" id="118"/>
+								</LabelField>
+								<LabelField name="СписокБракаХарактеристика" id="137">
+									<DataPath>СписокБрака.Характеристика</DataPath>
+									<Width>20</Width>
+									<ContextMenu name="СписокБракаХарактеристикаКонтекстноеМеню" id="138"/>
+									<ExtendedTooltip name="СписокБракаХарактеристикаРасширеннаяПодсказка" id="139"/>
+								</LabelField>
+								<LabelField name="СписокБракаСерия" id="125">
+									<DataPath>СписокБрака.Серия</DataPath>
+									<Width>20</Width>
+									<ContextMenu name="СписокБракаСерияКонтекстноеМеню" id="126"/>
+									<ExtendedTooltip name="СписокБракаСерияРасширеннаяПодсказка" id="127"/>
+								</LabelField>
+								<LabelField name="СписокБракаГоденДо" id="95">
+									<DataPath>СписокБрака.ГоденДо</DataPath>
+									<Width>10</Width>
+									<ContextMenu name="СписокБракаГоденДоКонтекстноеМеню" id="96"/>
+									<ExtendedTooltip name="СписокБракаГоденДоРасширеннаяПодсказка" id="97"/>
+								</LabelField>
+								<LabelField name="СписокБракаСрокГодности" id="128">
+									<DataPath>СписокБрака.СрокГодности</DataPath>
+									<Visible>false</Visible>
+									<Width>10</Width>
+									<ContextMenu name="СписокБракаСрокГодностиКонтекстноеМеню" id="129"/>
+									<ExtendedTooltip name="СписокБракаСрокГодностиРасширеннаяПодсказка" id="130"/>
+								</LabelField>
+								<LabelField name="СписокБракаЕдиницаИзмеренияСрокаГодности" id="104">
+									<DataPath>СписокБрака.ЕдиницаИзмеренияСрокаГодности</DataPath>
+									<Visible>false</Visible>
+									<Width>10</Width>
+									<ContextMenu name="СписокБракаЕдиницаИзмеренияСрокаГодностиКонтекстноеМеню" id="105"/>
+									<ExtendedTooltip name="СписокБракаЕдиницаИзмеренияСрокаГодностиРасширеннаяПодсказка" id="106"/>
+								</LabelField>
+								<LabelField name="СписокБракаСрокГодностиПредставление" id="131">
+									<DataPath>СписокБрака.СрокГодностиПредставление</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Срок годности</v8:content>
+										</v8:item>
+									</Title>
+									<Width>10</Width>
+									<ContextMenu name="СписокБракаСрокГодностиПредставлениеКонтекстноеМеню" id="132"/>
+									<ExtendedTooltip name="СписокБракаСрокГодностиПредставлениеРасширеннаяПодсказка" id="133"/>
+								</LabelField>
+								<LabelField name="СписокБракаКоличество" id="110">
+									<DataPath>СписокБрака.Количество</DataPath>
+									<Width>10</Width>
+									<ContextMenu name="СписокБракаКоличествоКонтекстноеМеню" id="111"/>
+									<ExtendedTooltip name="СписокБракаКоличествоРасширеннаяПодсказка" id="112"/>
+								</LabelField>
+								<LabelField name="СписокБракаЕдиницаХранения" id="107">
+									<DataPath>СписокБрака.ЕдиницаХранения</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Ед. изм.</v8:content>
+										</v8:item>
+									</Title>
+									<Width>10</Width>
+									<ContextMenu name="СписокБракаЕдиницаХраненияКонтекстноеМеню" id="108"/>
+									<ExtendedTooltip name="СписокБракаЕдиницаХраненияРасширеннаяПодсказка" id="109"/>
+								</LabelField>
+								<LabelField name="СписокБракаДнейДоПорчи" id="98">
+									<DataPath>СписокБрака.ДнейДоПорчи</DataPath>
+									<Width>10</Width>
+									<ContextMenu name="СписокБракаДнейДоПорчиКонтекстноеМеню" id="99"/>
+									<ExtendedTooltip name="СписокБракаДнейДоПорчиРасширеннаяПодсказка" id="100"/>
+								</LabelField>
+								<LabelField name="СписокБракаОтносительныйОстатокСрокаГодности" id="119">
+									<DataPath>СписокБрака.ОтносительныйОстатокСрокаГодности</DataPath>
+									<Width>10</Width>
+									<ContextMenu name="СписокБракаОтносительныйОстатокСрокаГодностиКонтекстноеМеню" id="120"/>
+									<ExtendedTooltip name="СписокБракаОтносительныйОстатокСрокаГодностиРасширеннаяПодсказка" id="121"/>
+								</LabelField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="Настройки" id="149">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Настройки</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Настройки</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Picture>
+						<xr:Ref>CommonPicture.НастройкиВиджетовEDI</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<ExtendedTooltip name="НастройкиРасширеннаяПодсказка" id="150"/>
+					<ChildItems>
+						<CommandBar name="Группа2" id="178">
+							<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="179"/>
+							<ChildItems>
+								<ButtonGroup name="Группа4" id="182">
+									<ExtendedTooltip name="Группа4РасширеннаяПодсказка" id="183"/>
+									<ChildItems>
+										<Button name="СохранитьНастройки" id="176">
+											<Type>CommandBarButton</Type>
+											<CommandName>Form.Command.СохранитьНастройки</CommandName>
+											<BackColor>style:FieldAlternativeBackColor</BackColor>
+											<ExtendedTooltip name="СохранитьНастройкиРасширеннаяПодсказка" id="177"/>
+										</Button>
+									</ChildItems>
+								</ButtonGroup>
+							</ChildItems>
+						</CommandBar>
+						<UsualGroup name="Группа3" id="180">
+							<Group>AlwaysHorizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="181"/>
+							<ChildItems>
+								<UsualGroup name="ГруппаЛево" id="167">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа лево</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа лево</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Vertical</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаЛевоРасширеннаяПодсказка" id="168"/>
+									<ChildItems>
+										<UsualGroup name="Организация" id="162">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Организация</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Организация</v8:content>
+												</v8:item>
+											</ToolTip>
+											<ExtendedTooltip name="ОрганизацияРасширеннаяПодсказка" id="163"/>
+											<ChildItems>
+												<InputField name="Организация1" id="164">
+													<DataPath>Организация</DataPath>
+													<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+													<ContextMenu name="Организация1КонтекстноеМеню" id="165"/>
+													<ExtendedTooltip name="Организация1РасширеннаяПодсказка" id="166"/>
+												</InputField>
+											</ChildItems>
+										</UsualGroup>
+										<UsualGroup name="ОткрыватьФормуПриВходе" id="171">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Открывать форму при входе в программу для</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Открывать форму при входе</v8:content>
+												</v8:item>
+											</ToolTip>
+											<ExtendedTooltip name="ОткрыватьФормуПриВходеРасширеннаяПодсказка" id="172"/>
+											<ChildItems>
+												<InputField name="СписокПользователей" id="173">
+													<DataPath>СписокПользователей</DataPath>
+													<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+													<ContextMenu name="СписокПользователейКонтекстноеМеню" id="174"/>
+													<ExtendedTooltip name="СписокПользователейРасширеннаяПодсказка" id="175"/>
+												</InputField>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаПраво" id="169">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа право</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа право</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Vertical</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаПравоРасширеннаяПодсказка" id="170"/>
+									<ChildItems>
+										<UsualGroup name="Склады" id="151">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Склады</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Склады</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Group>Vertical</Group>
+											<ExtendedTooltip name="СкладыРасширеннаяПодсказка" id="152"/>
+											<ChildItems>
+												<InputField name="ОсновнойСклад" id="153">
+													<DataPath>ОсновнойСклад</DataPath>
+													<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+													<ContextMenu name="ОсновнойСкладКонтекстноеМеню" id="154"/>
+													<ExtendedTooltip name="ОсновнойСкладРасширеннаяПодсказка" id="155"/>
+												</InputField>
+												<InputField name="СкладБрака1" id="156">
+													<DataPath>СкладБрака</DataPath>
+													<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+													<ContextMenu name="СкладБрака1КонтекстноеМеню" id="157"/>
+													<ExtendedTooltip name="СкладБрака1РасширеннаяПодсказка" id="158"/>
+												</InputField>
+												<InputField name="СкладПросрочки1" id="159">
+													<DataPath>СкладПросрочки</DataPath>
+													<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+													<ContextMenu name="СкладПросрочки1КонтекстноеМеню" id="160"/>
+													<ExtendedTooltip name="СкладПросрочки1РасширеннаяПодсказка" id="161"/>
+												</InputField>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:ExternalDataProcessorObject.СозданиеПеремещенийТоваров</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="СписокПросрочки" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список просрочки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<UseAlways>
+				<Field>СписокПросрочки.ЕдиницаИзмеренияСрокаГодности</Field>
+				<Field>СписокПросрочки.Пометка</Field>
+				<Field>СписокПросрочки.Склад</Field>
+				<Field>СписокПросрочки.СрокГодности</Field>
+			</UseAlways>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>false</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ РАЗРЕШЕННЫЕ РАЗЛИЧНЫЕ
+	Сегменты.Номенклатура КАК Номенклатура,
+	Сегменты.Характеристика КАК Характеристика,
+	ИСТИНА КАК ИспользуетсяОтборПоСегментуНоменклатуры
+ПОМЕСТИТЬ ОтборПоСегментуНоменклатуры
+ИЗ
+	РегистрСведений.НоменклатураСегмента КАК Сегменты
+{ГДЕ
+	Сегменты.Сегмент.* КАК СегментНоменклатуры,
+	Сегменты.Номенклатура.* КАК Номенклатура,
+	Сегменты.Характеристика.* КАК Характеристика}
+
+ИНДЕКСИРОВАТЬ ПО
+	Номенклатура,
+	Характеристика,
+	ИспользуетсяОтборПоСегментуНоменклатуры
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	ТоварыНаСкладахОстатки.Серия КАК Серия,
+	НАЧАЛОПЕРИОДА(ТоварыНаСкладахОстатки.Серия.ГоденДо, ДЕНЬ) КАК ГоденДо,
+	ВЫБОР
+		КОГДА ТоварыНаСкладахОстатки.Серия.ВидНоменклатуры.ТочностьУказанияСрокаГодностиСерии = ЗНАЧЕНИЕ(Перечисление.ТочностиУказанияСрокаГодности.СТочностьюДоЧасов)
+			ТОГДА ИСТИНА
+		ИНАЧЕ ЛОЖЬ
+	КОНЕЦ КАК УказыватьСрокГодностиСТочностьюДоЧасов,
+	ТоварыНаСкладахОстатки.Номенклатура КАК Номенклатура,
+	ТоварыНаСкладахОстатки.Номенклатура.ЕдиницаИзмерения КАК ЕдиницаХранения,
+	ТоварыНаСкладахОстатки.Номенклатура.ЕдиницаДляОтчетов КАК ЕдиницаДляОтчетов,
+	ТоварыНаСкладахОстатки.Номенклатура.КоэффициентЕдиницыДляОтчетов КАК КоэффициентЕдиницыДляОтчетов,
+	ТоварыНаСкладахОстатки.Номенклатура.СрокГодности КАК СрокГодности,
+	ТоварыНаСкладахОстатки.Номенклатура.ЕдиницаИзмеренияСрокаГодности КАК ЕдиницаИзмеренияСрокаГодности,
+	ТоварыНаСкладахОстатки.Характеристика КАК Характеристика,
+	ТоварыНаСкладахОстатки.ВНаличииОстаток КАК Количество,
+	ВЫРАЗИТЬ(ВЫБОР
+			КОГДА ТоварыНаСкладахОстатки.Номенклатура.ЕдиницаИзмеренияСрокаГодности = ЗНАЧЕНИЕ(Перечисление.ЕдиницыИзмеренияВремени.Час)
+				ТОГДА ВЫБОР
+						КОГДА ДОБАВИТЬКДАТЕ(ТоварыНаСкладахОстатки.Серия.ГоденДо, ЧАС, -ТоварыНаСкладахОстатки.Номенклатура.СрокГодности) &gt;= &amp;ТекущаяДата
+							ТОГДА 100
+						ИНАЧЕ ВЫБОР
+								КОГДА ВЫБОР
+										КОГДА ТоварыНаСкладахОстатки.Серия.ВидНоменклатуры.ТочностьУказанияСрокаГодностиСерии = ЗНАЧЕНИЕ(Перечисление.ТочностиУказанияСрокаГодности.СТочностьюДоЧасов)
+											ТОГДА ИСТИНА
+										ИНАЧЕ ЛОЖЬ
+									КОНЕЦ
+									ТОГДА ВЫБОР
+											КОГДА РАЗНОСТЬДАТ(ДОБАВИТЬКДАТЕ(ТоварыНаСкладахОстатки.Серия.ГоденДо, ЧАС, -ТоварыНаСкладахОстатки.Номенклатура.СрокГодности), ТоварыНаСкладахОстатки.Серия.ГоденДо, ЧАС) &gt; 0
+													И РАЗНОСТЬДАТ(&amp;ТекущаяДата, ТоварыНаСкладахОстатки.Серия.ГоденДо, ЧАС) &gt; 0
+												ТОГДА РАЗНОСТЬДАТ(&amp;ТекущаяДата, ТоварыНаСкладахОстатки.Серия.ГоденДо, ЧАС) / РАЗНОСТЬДАТ(ДОБАВИТЬКДАТЕ(ТоварыНаСкладахОстатки.Серия.ГоденДо, ЧАС, -ТоварыНаСкладахОстатки.Номенклатура.СрокГодности), ТоварыНаСкладахОстатки.Серия.ГоденДо, ЧАС) * 100
+											ИНАЧЕ 0
+										КОНЕЦ
+								ИНАЧЕ ВЫБОР
+										КОГДА РАЗНОСТЬДАТ(ДОБАВИТЬКДАТЕ(ТоварыНаСкладахОстатки.Серия.ГоденДо, ЧАС, -ТоварыНаСкладахОстатки.Номенклатура.СрокГодности), ТоварыНаСкладахОстатки.Серия.ГоденДо, ДЕНЬ) &gt; 0
+												И РАЗНОСТЬДАТ(&amp;ТекущаяДата, ТоварыНаСкладахОстатки.Серия.ГоденДо, ДЕНЬ) &gt; 0
+											ТОГДА РАЗНОСТЬДАТ(&amp;ТекущаяДата, ТоварыНаСкладахОстатки.Серия.ГоденДо, ДЕНЬ) / РАЗНОСТЬДАТ(ДОБАВИТЬКДАТЕ(ТоварыНаСкладахОстатки.Серия.ГоденДо, ЧАС, -ТоварыНаСкладахОстатки.Номенклатура.СрокГодности), ТоварыНаСкладахОстатки.Серия.ГоденДо, ДЕНЬ) * 100
+										ИНАЧЕ 0
+									КОНЕЦ
+							КОНЕЦ
+					КОНЕЦ
+			КОГДА ТоварыНаСкладахОстатки.Номенклатура.ЕдиницаИзмеренияСрокаГодности = ЗНАЧЕНИЕ(Перечисление.ЕдиницыИзмеренияВремени.Сутки)
+				ТОГДА ВЫБОР
+						КОГДА ДОБАВИТЬКДАТЕ(ТоварыНаСкладахОстатки.Серия.ГоденДо, ДЕНЬ, -ТоварыНаСкладахОстатки.Номенклатура.СрокГодности) &gt;= &amp;ТекущаяДата
+							ТОГДА 100
+						ИНАЧЕ ВЫБОР
+								КОГДА ВЫБОР
+										КОГДА ТоварыНаСкладахОстатки.Серия.ВидНоменклатуры.ТочностьУказанияСрокаГодностиСерии = ЗНАЧЕНИЕ(Перечисление.ТочностиУказанияСрокаГодности.СТочностьюДоЧасов)
+											ТОГДА ИСТИНА
+										ИНАЧЕ ЛОЖЬ
+									КОНЕЦ
+									ТОГДА ВЫБОР
+											КОГДА РАЗНОСТЬДАТ(ДОБАВИТЬКДАТЕ(ТоварыНаСкладахОстатки.Серия.ГоденДо, ДЕНЬ, -ТоварыНаСкладахОстатки.Номенклатура.СрокГодности), ТоварыНаСкладахОстатки.Серия.ГоденДо, ЧАС) &gt; 0
+													И РАЗНОСТЬДАТ(&amp;ТекущаяДата, ТоварыНаСкладахОстатки.Серия.ГоденДо, ЧАС) &gt; 0
+												ТОГДА РАЗНОСТЬДАТ(&amp;ТекущаяДата, ТоварыНаСкладахОстатки.Серия.ГоденДо, ЧАС) / РАЗНОСТЬДАТ(ДОБАВИТЬКДАТЕ(ТоварыНаСкладахОстатки.Серия.ГоденДо, ДЕНЬ, -ТоварыНаСкладахОстатки.Номенклатура.СрокГодности), ТоварыНаСкладахОстатки.Серия.ГоденДо, ЧАС) * 100
+											ИНАЧЕ 0
+										КОНЕЦ
+								ИНАЧЕ ВЫБОР
+										КОГДА РАЗНОСТЬДАТ(ДОБАВИТЬКДАТЕ(ТоварыНаСкладахОстатки.Серия.ГоденДо, ДЕНЬ, -ТоварыНаСкладахОстатки.Номенклатура.СрокГодности), ТоварыНаСкладахОстатки.Серия.ГоденДо, ДЕНЬ) &gt; 0
+												И РАЗНОСТЬДАТ(&amp;ТекущаяДата, ТоварыНаСкладахОстатки.Серия.ГоденДо, ДЕНЬ) &gt; 0
+											ТОГДА РАЗНОСТЬДАТ(&amp;ТекущаяДата, ТоварыНаСкладахОстатки.Серия.ГоденДо, ДЕНЬ) / РАЗНОСТЬДАТ(ДОБАВИТЬКДАТЕ(ТоварыНаСкладахОстатки.Серия.ГоденДо, ДЕНЬ, -ТоварыНаСкладахОстатки.Номенклатура.СрокГодности), ТоварыНаСкладахОстатки.Серия.ГоденДо, ДЕНЬ) * 100
+										ИНАЧЕ 0
+									КОНЕЦ
+							КОНЕЦ
+					КОНЕЦ
+			КОГДА ТоварыНаСкладахОстатки.Номенклатура.ЕдиницаИзмеренияСрокаГодности = ЗНАЧЕНИЕ(Перечисление.ЕдиницыИзмеренияВремени.Месяц)
+				ТОГДА ВЫБОР
+						КОГДА ДОБАВИТЬКДАТЕ(ТоварыНаСкладахОстатки.Серия.ГоденДо, МЕСЯЦ, -ТоварыНаСкладахОстатки.Номенклатура.СрокГодности) &gt;= &amp;ТекущаяДата
+							ТОГДА 100
+						ИНАЧЕ ВЫБОР
+								КОГДА ВЫБОР
+										КОГДА ТоварыНаСкладахОстатки.Серия.ВидНоменклатуры.ТочностьУказанияСрокаГодностиСерии = ЗНАЧЕНИЕ(Перечисление.ТочностиУказанияСрокаГодности.СТочностьюДоЧасов)
+											ТОГДА ИСТИНА
+										ИНАЧЕ ЛОЖЬ
+									КОНЕЦ
+									ТОГДА ВЫБОР
+											КОГДА РАЗНОСТЬДАТ(ДОБАВИТЬКДАТЕ(ТоварыНаСкладахОстатки.Серия.ГоденДо, МЕСЯЦ, -ТоварыНаСкладахОстатки.Номенклатура.СрокГодности), ТоварыНаСкладахОстатки.Серия.ГоденДо, ЧАС) &gt; 0
+													И РАЗНОСТЬДАТ(&amp;ТекущаяДата, ТоварыНаСкладахОстатки.Серия.ГоденДо, ЧАС) &gt; 0
+												ТОГДА РАЗНОСТЬДАТ(&amp;ТекущаяДата, ТоварыНаСкладахОстатки.Серия.ГоденДо, ЧАС) / РАЗНОСТЬДАТ(ДОБАВИТЬКДАТЕ(ТоварыНаСкладахОстатки.Серия.ГоденДо, МЕСЯЦ, -ТоварыНаСкладахОстатки.Номенклатура.СрокГодности), ТоварыНаСкладахОстатки.Серия.ГоденДо, ЧАС) * 100
+											ИНАЧЕ 0
+										КОНЕЦ
+								ИНАЧЕ ВЫБОР
+										КОГДА РАЗНОСТЬДАТ(ДОБАВИТЬКДАТЕ(ТоварыНаСкладахОстатки.Серия.ГоденДо, МЕСЯЦ, -ТоварыНаСкладахОстатки.Номенклатура.СрокГодности), ТоварыНаСкладахОстатки.Серия.ГоденДо, ДЕНЬ) &gt; 0
+												И РАЗНОСТЬДАТ(&amp;ТекущаяДата, ТоварыНаСкладахОстатки.Серия.ГоденДо, ДЕНЬ) &gt; 0
+											ТОГДА РАЗНОСТЬДАТ(&amp;ТекущаяДата, ТоварыНаСкладахОстатки.Серия.ГоденДо, ДЕНЬ) / РАЗНОСТЬДАТ(ДОБАВИТЬКДАТЕ(ТоварыНаСкладахОстатки.Серия.ГоденДо, МЕСЯЦ, -ТоварыНаСкладахОстатки.Номенклатура.СрокГодности), ТоварыНаСкладахОстатки.Серия.ГоденДо, ДЕНЬ) * 100
+										ИНАЧЕ 0
+									КОНЕЦ
+							КОНЕЦ
+					КОНЕЦ
+			КОГДА ТоварыНаСкладахОстатки.Номенклатура.ЕдиницаИзмеренияСрокаГодности = ЗНАЧЕНИЕ(Перечисление.ЕдиницыИзмеренияВремени.Год)
+				ТОГДА ВЫБОР
+						КОГДА ДОБАВИТЬКДАТЕ(ТоварыНаСкладахОстатки.Серия.ГоденДо, ГОД, -ТоварыНаСкладахОстатки.Номенклатура.СрокГодности) &gt;= &amp;ТекущаяДата
+							ТОГДА 100
+						ИНАЧЕ ВЫБОР
+								КОГДА ВЫБОР
+										КОГДА ТоварыНаСкладахОстатки.Серия.ВидНоменклатуры.ТочностьУказанияСрокаГодностиСерии = ЗНАЧЕНИЕ(Перечисление.ТочностиУказанияСрокаГодности.СТочностьюДоЧасов)
+											ТОГДА ИСТИНА
+										ИНАЧЕ ЛОЖЬ
+									КОНЕЦ
+									ТОГДА ВЫБОР
+											КОГДА РАЗНОСТЬДАТ(ДОБАВИТЬКДАТЕ(ТоварыНаСкладахОстатки.Серия.ГоденДо, ГОД, -ТоварыНаСкладахОстатки.Номенклатура.СрокГодности), ТоварыНаСкладахОстатки.Серия.ГоденДо, ЧАС) &gt; 0
+													И РАЗНОСТЬДАТ(&amp;ТекущаяДата, ТоварыНаСкладахОстатки.Серия.ГоденДо, ЧАС) &gt; 0
+												ТОГДА РАЗНОСТЬДАТ(&amp;ТекущаяДата, ТоварыНаСкладахОстатки.Серия.ГоденДо, ЧАС) / РАЗНОСТЬДАТ(ДОБАВИТЬКДАТЕ(ТоварыНаСкладахОстатки.Серия.ГоденДо, ГОД, -ТоварыНаСкладахОстатки.Номенклатура.СрокГодности), ТоварыНаСкладахОстатки.Серия.ГоденДо, ЧАС) * 100
+											ИНАЧЕ 0
+										КОНЕЦ
+								ИНАЧЕ ВЫБОР
+										КОГДА РАЗНОСТЬДАТ(ДОБАВИТЬКДАТЕ(ТоварыНаСкладахОстатки.Серия.ГоденДо, ГОД, -ТоварыНаСкладахОстатки.Номенклатура.СрокГодности), ТоварыНаСкладахОстатки.Серия.ГоденДо, ДЕНЬ) &gt; 0
+												И РАЗНОСТЬДАТ(&amp;ТекущаяДата, ТоварыНаСкладахОстатки.Серия.ГоденДо, ДЕНЬ) &gt; 0
+											ТОГДА РАЗНОСТЬДАТ(&amp;ТекущаяДата, ТоварыНаСкладахОстатки.Серия.ГоденДо, ДЕНЬ) / РАЗНОСТЬДАТ(ДОБАВИТЬКДАТЕ(ТоварыНаСкладахОстатки.Серия.ГоденДо, ГОД, -ТоварыНаСкладахОстатки.Номенклатура.СрокГодности), ТоварыНаСкладахОстатки.Серия.ГоденДо, ДЕНЬ) * 100
+										ИНАЧЕ 0
+									КОНЕЦ
+							КОНЕЦ
+					КОНЕЦ
+		КОНЕЦ КАК ЧИСЛО(5, 2)) КАК ОтносительныйОстатокСрокаГодности,
+	ВЫБОР
+		КОГДА РАЗНОСТЬДАТ(&amp;ТекущаяДата, ТоварыНаСкладахОстатки.Серия.ГоденДо, ДЕНЬ) &lt; 0
+			ТОГДА "Не годен"
+		ИНАЧЕ СТРОКА(РАЗНОСТЬДАТ(&amp;ТекущаяДата, ТоварыНаСкладахОстатки.Серия.ГоденДо, ДЕНЬ))
+	КОНЕЦ КАК ДнейДоПорчи,
+	СТРОКА(ТоварыНаСкладахОстатки.Номенклатура.СрокГодности) КАК СрокГодностиПредставление,
+	ПРЕДСТАВЛЕНИЕ(ТоварыНаСкладахОстатки.Номенклатура.ЕдиницаИзмеренияСрокаГодности) КАК ЕдиницаИзмеренияСрокаГодностиПредставление,
+	ВЫБОР
+		КОГДА &amp;ЗначениеПометки = НЕОПРЕДЕЛЕНО
+			ТОГДА ТоварыНаСкладахОстатки.Серия В (&amp;ВыбраннаяНоменклатура)
+		ИНАЧЕ &amp;ЗначениеПометки
+	КОНЕЦ КАК Пометка,
+	ТоварыНаСкладахОстатки.Склад КАК Склад
+ИЗ
+	РегистрНакопления.ТоварыНаСкладах.Остатки(
+			,
+			(Номенклатура.ВидНоменклатуры, Склад) В
+					(ВЫБРАТЬ
+						ПолитикиУчетаСерий.Ссылка КАК ВидНоменклатуры,
+						ПолитикиУчетаСерий.Склад КАК Склад
+					ИЗ
+						Справочник.ВидыНоменклатуры.ПолитикиУчетаСерий КАК ПолитикиУчетаСерий
+					ГДЕ
+						ПолитикиУчетаСерий.ПолитикаУчетаСерий.УчитыватьОстаткиСерий
+						И НЕ ПолитикиУчетаСерий.ПолитикаУчетаСерий.ТипПолитики = ЗНАЧЕНИЕ(Перечисление.ТипыПолитикУказанияСерий.АвторасчетПоFEFOОстатковСерий)
+						И ПолитикиУчетаСерий.Ссылка.ИспользоватьСрокГодностиСерии)
+				И Склад В (&amp;Склад) {((Номенклатура, Характеристика) В
+			    (ВЫБРАТЬ
+			        ОтборПоСегментуНоменклатуры.Номенклатура,
+			        ОтборПоСегментуНоменклатуры.Характеристика
+			    ИЗ
+			        ОтборПоСегментуНоменклатуры
+			    ГДЕ
+			        ОтборПоСегментуНоменклатуры.ИспользуетсяОтборПоСегментуНоменклатуры = &amp;ИспользуетсяОтборПоСегментуНоменклатуры)) КАК Поле2}) КАК ТоварыНаСкладахОстатки
+ГДЕ
+	(ВЫРАЗИТЬ(ВЫБОР
+				КОГДА ТоварыНаСкладахОстатки.Номенклатура.ЕдиницаИзмеренияСрокаГодности = ЗНАЧЕНИЕ(Перечисление.ЕдиницыИзмеренияВремени.Час)
+					ТОГДА ВЫБОР
+							КОГДА ДОБАВИТЬКДАТЕ(ТоварыНаСкладахОстатки.Серия.ГоденДо, ЧАС, -ТоварыНаСкладахОстатки.Номенклатура.СрокГодности) &gt;= &amp;ТекущаяДата
+								ТОГДА 100
+							ИНАЧЕ ВЫБОР
+									КОГДА ВЫБОР
+											КОГДА ТоварыНаСкладахОстатки.Серия.ВидНоменклатуры.ТочностьУказанияСрокаГодностиСерии = ЗНАЧЕНИЕ(Перечисление.ТочностиУказанияСрокаГодности.СТочностьюДоЧасов)
+												ТОГДА ИСТИНА
+											ИНАЧЕ ЛОЖЬ
+										КОНЕЦ
+										ТОГДА ВЫБОР
+												КОГДА РАЗНОСТЬДАТ(ДОБАВИТЬКДАТЕ(ТоварыНаСкладахОстатки.Серия.ГоденДо, ЧАС, -ТоварыНаСкладахОстатки.Номенклатура.СрокГодности), ТоварыНаСкладахОстатки.Серия.ГоденДо, ЧАС) &gt; 0
+														И РАЗНОСТЬДАТ(&amp;ТекущаяДата, ТоварыНаСкладахОстатки.Серия.ГоденДо, ЧАС) &gt; 0
+													ТОГДА РАЗНОСТЬДАТ(&amp;ТекущаяДата, ТоварыНаСкладахОстатки.Серия.ГоденДо, ЧАС) / РАЗНОСТЬДАТ(ДОБАВИТЬКДАТЕ(ТоварыНаСкладахОстатки.Серия.ГоденДо, ЧАС, -ТоварыНаСкладахОстатки.Номенклатура.СрокГодности), ТоварыНаСкладахОстатки.Серия.ГоденДо, ЧАС) * 100
+												ИНАЧЕ 0
+											КОНЕЦ
+									ИНАЧЕ ВЫБОР
+											КОГДА РАЗНОСТЬДАТ(ДОБАВИТЬКДАТЕ(ТоварыНаСкладахОстатки.Серия.ГоденДо, ЧАС, -ТоварыНаСкладахОстатки.Номенклатура.СрокГодности), ТоварыНаСкладахОстатки.Серия.ГоденДо, ДЕНЬ) &gt; 0
+													И РАЗНОСТЬДАТ(&amp;ТекущаяДата, ТоварыНаСкладахОстатки.Серия.ГоденДо, ДЕНЬ) &gt; 0
+												ТОГДА РАЗНОСТЬДАТ(&amp;ТекущаяДата, ТоварыНаСкладахОстатки.Серия.ГоденДо, ДЕНЬ) / РАЗНОСТЬДАТ(ДОБАВИТЬКДАТЕ(ТоварыНаСкладахОстатки.Серия.ГоденДо, ЧАС, -ТоварыНаСкладахОстатки.Номенклатура.СрокГодности), ТоварыНаСкладахОстатки.Серия.ГоденДо, ДЕНЬ) * 100
+											ИНАЧЕ 0
+										КОНЕЦ
+								КОНЕЦ
+						КОНЕЦ
+				КОГДА ТоварыНаСкладахОстатки.Номенклатура.ЕдиницаИзмеренияСрокаГодности = ЗНАЧЕНИЕ(Перечисление.ЕдиницыИзмеренияВремени.Сутки)
+					ТОГДА ВЫБОР
+							КОГДА ДОБАВИТЬКДАТЕ(ТоварыНаСкладахОстатки.Серия.ГоденДо, ДЕНЬ, -ТоварыНаСкладахОстатки.Номенклатура.СрокГодности) &gt;= &amp;ТекущаяДата
+								ТОГДА 100
+							ИНАЧЕ ВЫБОР
+									КОГДА ВЫБОР
+											КОГДА ТоварыНаСкладахОстатки.Серия.ВидНоменклатуры.ТочностьУказанияСрокаГодностиСерии = ЗНАЧЕНИЕ(Перечисление.ТочностиУказанияСрокаГодности.СТочностьюДоЧасов)
+												ТОГДА ИСТИНА
+											ИНАЧЕ ЛОЖЬ
+										КОНЕЦ
+										ТОГДА ВЫБОР
+												КОГДА РАЗНОСТЬДАТ(ДОБАВИТЬКДАТЕ(ТоварыНаСкладахОстатки.Серия.ГоденДо, ДЕНЬ, -ТоварыНаСкладахОстатки.Номенклатура.СрокГодности), ТоварыНаСкладахОстатки.Серия.ГоденДо, ЧАС) &gt; 0
+														И РАЗНОСТЬДАТ(&amp;ТекущаяДата, ТоварыНаСкладахОстатки.Серия.ГоденДо, ЧАС) &gt; 0
+													ТОГДА РАЗНОСТЬДАТ(&amp;ТекущаяДата, ТоварыНаСкладахОстатки.Серия.ГоденДо, ЧАС) / РАЗНОСТЬДАТ(ДОБАВИТЬКДАТЕ(ТоварыНаСкладахОстатки.Серия.ГоденДо, ДЕНЬ, -ТоварыНаСкладахОстатки.Номенклатура.СрокГодности), ТоварыНаСкладахОстатки.Серия.ГоденДо, ЧАС) * 100
+												ИНАЧЕ 0
+											КОНЕЦ
+									ИНАЧЕ ВЫБОР
+											КОГДА РАЗНОСТЬДАТ(ДОБАВИТЬКДАТЕ(ТоварыНаСкладахОстатки.Серия.ГоденДо, ДЕНЬ, -ТоварыНаСкладахОстатки.Номенклатура.СрокГодности), ТоварыНаСкладахОстатки.Серия.ГоденДо, ДЕНЬ) &gt; 0
+													И РАЗНОСТЬДАТ(&amp;ТекущаяДата, ТоварыНаСкладахОстатки.Серия.ГоденДо, ДЕНЬ) &gt; 0
+												ТОГДА РАЗНОСТЬДАТ(&amp;ТекущаяДата, ТоварыНаСкладахОстатки.Серия.ГоденДо, ДЕНЬ) / РАЗНОСТЬДАТ(ДОБАВИТЬКДАТЕ(ТоварыНаСкладахОстатки.Серия.ГоденДо, ДЕНЬ, -ТоварыНаСкладахОстатки.Номенклатура.СрокГодности), ТоварыНаСкладахОстатки.Серия.ГоденДо, ДЕНЬ) * 100
+											ИНАЧЕ 0
+										КОНЕЦ
+								КОНЕЦ
+						КОНЕЦ
+				КОГДА ТоварыНаСкладахОстатки.Номенклатура.ЕдиницаИзмеренияСрокаГодности = ЗНАЧЕНИЕ(Перечисление.ЕдиницыИзмеренияВремени.Месяц)
+					ТОГДА ВЫБОР
+							КОГДА ДОБАВИТЬКДАТЕ(ТоварыНаСкладахОстатки.Серия.ГоденДо, МЕСЯЦ, -ТоварыНаСкладахОстатки.Номенклатура.СрокГодности) &gt;= &amp;ТекущаяДата
+								ТОГДА 100
+							ИНАЧЕ ВЫБОР
+									КОГДА ВЫБОР
+											КОГДА ТоварыНаСкладахОстатки.Серия.ВидНоменклатуры.ТочностьУказанияСрокаГодностиСерии = ЗНАЧЕНИЕ(Перечисление.ТочностиУказанияСрокаГодности.СТочностьюДоЧасов)
+												ТОГДА ИСТИНА
+											ИНАЧЕ ЛОЖЬ
+										КОНЕЦ
+										ТОГДА ВЫБОР
+												КОГДА РАЗНОСТЬДАТ(ДОБАВИТЬКДАТЕ(ТоварыНаСкладахОстатки.Серия.ГоденДо, МЕСЯЦ, -ТоварыНаСкладахОстатки.Номенклатура.СрокГодности), ТоварыНаСкладахОстатки.Серия.ГоденДо, ЧАС) &gt; 0
+														И РАЗНОСТЬДАТ(&amp;ТекущаяДата, ТоварыНаСкладахОстатки.Серия.ГоденДо, ЧАС) &gt; 0
+													ТОГДА РАЗНОСТЬДАТ(&amp;ТекущаяДата, ТоварыНаСкладахОстатки.Серия.ГоденДо, ЧАС) / РАЗНОСТЬДАТ(ДОБАВИТЬКДАТЕ(ТоварыНаСкладахОстатки.Серия.ГоденДо, МЕСЯЦ, -ТоварыНаСкладахОстатки.Номенклатура.СрокГодности), ТоварыНаСкладахОстатки.Серия.ГоденДо, ЧАС) * 100
+												ИНАЧЕ 0
+											КОНЕЦ
+									ИНАЧЕ ВЫБОР
+											КОГДА РАЗНОСТЬДАТ(ДОБАВИТЬКДАТЕ(ТоварыНаСкладахОстатки.Серия.ГоденДо, МЕСЯЦ, -ТоварыНаСкладахОстатки.Номенклатура.СрокГодности), ТоварыНаСкладахОстатки.Серия.ГоденДо, ДЕНЬ) &gt; 0
+													И РАЗНОСТЬДАТ(&amp;ТекущаяДата, ТоварыНаСкладахОстатки.Серия.ГоденДо, ДЕНЬ) &gt; 0
+												ТОГДА РАЗНОСТЬДАТ(&amp;ТекущаяДата, ТоварыНаСкладахОстатки.Серия.ГоденДо, ДЕНЬ) / РАЗНОСТЬДАТ(ДОБАВИТЬКДАТЕ(ТоварыНаСкладахОстатки.Серия.ГоденДо, МЕСЯЦ, -ТоварыНаСкладахОстатки.Номенклатура.СрокГодности), ТоварыНаСкладахОстатки.Серия.ГоденДо, ДЕНЬ) * 100
+											ИНАЧЕ 0
+										КОНЕЦ
+								КОНЕЦ
+						КОНЕЦ
+				КОГДА ТоварыНаСкладахОстатки.Номенклатура.ЕдиницаИзмеренияСрокаГодности = ЗНАЧЕНИЕ(Перечисление.ЕдиницыИзмеренияВремени.Год)
+					ТОГДА ВЫБОР
+							КОГДА ДОБАВИТЬКДАТЕ(ТоварыНаСкладахОстатки.Серия.ГоденДо, ГОД, -ТоварыНаСкладахОстатки.Номенклатура.СрокГодности) &gt;= &amp;ТекущаяДата
+								ТОГДА 100
+							ИНАЧЕ ВЫБОР
+									КОГДА ВЫБОР
+											КОГДА ТоварыНаСкладахОстатки.Серия.ВидНоменклатуры.ТочностьУказанияСрокаГодностиСерии = ЗНАЧЕНИЕ(Перечисление.ТочностиУказанияСрокаГодности.СТочностьюДоЧасов)
+												ТОГДА ИСТИНА
+											ИНАЧЕ ЛОЖЬ
+										КОНЕЦ
+										ТОГДА ВЫБОР
+												КОГДА РАЗНОСТЬДАТ(ДОБАВИТЬКДАТЕ(ТоварыНаСкладахОстатки.Серия.ГоденДо, ГОД, -ТоварыНаСкладахОстатки.Номенклатура.СрокГодности), ТоварыНаСкладахОстатки.Серия.ГоденДо, ЧАС) &gt; 0
+														И РАЗНОСТЬДАТ(&amp;ТекущаяДата, ТоварыНаСкладахОстатки.Серия.ГоденДо, ЧАС) &gt; 0
+													ТОГДА РАЗНОСТЬДАТ(&amp;ТекущаяДата, ТоварыНаСкладахОстатки.Серия.ГоденДо, ЧАС) / РАЗНОСТЬДАТ(ДОБАВИТЬКДАТЕ(ТоварыНаСкладахОстатки.Серия.ГоденДо, ГОД, -ТоварыНаСкладахОстатки.Номенклатура.СрокГодности), ТоварыНаСкладахОстатки.Серия.ГоденДо, ЧАС) * 100
+												ИНАЧЕ 0
+											КОНЕЦ
+									ИНАЧЕ ВЫБОР
+											КОГДА РАЗНОСТЬДАТ(ДОБАВИТЬКДАТЕ(ТоварыНаСкладахОстатки.Серия.ГоденДо, ГОД, -ТоварыНаСкладахОстатки.Номенклатура.СрокГодности), ТоварыНаСкладахОстатки.Серия.ГоденДо, ДЕНЬ) &gt; 0
+													И РАЗНОСТЬДАТ(&amp;ТекущаяДата, ТоварыНаСкладахОстатки.Серия.ГоденДо, ДЕНЬ) &gt; 0
+												ТОГДА РАЗНОСТЬДАТ(&amp;ТекущаяДата, ТоварыНаСкладахОстатки.Серия.ГоденДо, ДЕНЬ) / РАЗНОСТЬДАТ(ДОБАВИТЬКДАТЕ(ТоварыНаСкладахОстатки.Серия.ГоденДо, ГОД, -ТоварыНаСкладахОстатки.Номенклатура.СрокГодности), ТоварыНаСкладахОстатки.Серия.ГоденДо, ДЕНЬ) * 100
+											ИНАЧЕ 0
+										КОНЕЦ
+								КОНЕЦ
+						КОНЕЦ
+			КОНЕЦ КАК ЧИСЛО(5, 2))) &gt; 0</QueryText>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">ОтносительныйОстатокСрокаГодности</dcsset:left>
+							<dcsset:comparisonType>LessOrEqual</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:decimal">30</dcsset:right>
+						</dcsset:item>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemField">
+							<dcsset:field>Склад</dcsset:field>
+							<dcsset:orderType>Asc</dcsset:orderType>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:OrderItemField">
+							<dcsset:field>Номенклатура.Наименование</dcsset:field>
+							<dcsset:orderType>Asc</dcsset:orderType>
+						</dcsset:item>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:item>
+							<dcsset:selection>
+								<dcsset:item>
+									<dcsset:field>ДнейДоПорчи</dcsset:field>
+								</dcsset:item>
+								<dcsset:item>
+									<dcsset:field>Количество</dcsset:field>
+								</dcsset:item>
+							</dcsset:selection>
+							<dcsset:filter>
+								<dcsset:item xsi:type="dcsset:FilterItemComparison">
+									<dcsset:left xsi:type="dcscor:Field">ОтносительныйОстатокСрокаГодности</dcsset:left>
+									<dcsset:comparisonType>LessOrEqual</dcsset:comparisonType>
+									<dcsset:right xsi:type="xs:decimal">0</dcsset:right>
+								</dcsset:item>
+							</dcsset:filter>
+							<dcsset:appearance>
+								<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+									<dcscor:parameter>ЦветТекста</dcscor:parameter>
+									<dcscor:value xsi:type="v8ui:Color">style:NegativeTextColor</dcscor:value>
+								</dcscor:item>
+							</dcsset:appearance>
+						</dcsset:item>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="ОсновнойСклад" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Основной склад</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Склады</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СкладПросрочки" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Склад просрочки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Склады</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СкладБрака" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Склад брака</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Склады</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СписокБрака" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список брака</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<UseAlways>
+				<Field>СписокБрака.ЕдиницаИзмеренияСрокаГодности</Field>
+				<Field>СписокБрака.Пометка</Field>
+				<Field>СписокБрака.Склад</Field>
+				<Field>СписокБрака.СрокГодности</Field>
+			</UseAlways>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>false</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ РАЗРЕШЕННЫЕ РАЗЛИЧНЫЕ
+	Сегменты.Номенклатура КАК Номенклатура,
+	Сегменты.Характеристика КАК Характеристика,
+	ИСТИНА КАК ИспользуетсяОтборПоСегментуНоменклатуры
+ПОМЕСТИТЬ ОтборПоСегментуНоменклатуры
+ИЗ
+	РегистрСведений.НоменклатураСегмента КАК Сегменты
+{ГДЕ
+	Сегменты.Сегмент.* КАК СегментНоменклатуры,
+	Сегменты.Номенклатура.* КАК Номенклатура,
+	Сегменты.Характеристика.* КАК Характеристика}
+
+ИНДЕКСИРОВАТЬ ПО
+	Номенклатура,
+	Характеристика,
+	ИспользуетсяОтборПоСегментуНоменклатуры
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	ТоварыНаСкладахОстатки.Серия КАК Серия,
+	НАЧАЛОПЕРИОДА(ТоварыНаСкладахОстатки.Серия.ГоденДо, ДЕНЬ) КАК ГоденДо,
+	ВЫБОР
+		КОГДА ТоварыНаСкладахОстатки.Серия.ВидНоменклатуры.ТочностьУказанияСрокаГодностиСерии = ЗНАЧЕНИЕ(Перечисление.ТочностиУказанияСрокаГодности.СТочностьюДоЧасов)
+			ТОГДА ИСТИНА
+		ИНАЧЕ ЛОЖЬ
+	КОНЕЦ КАК УказыватьСрокГодностиСТочностьюДоЧасов,
+	ТоварыНаСкладахОстатки.Номенклатура КАК Номенклатура,
+	ТоварыНаСкладахОстатки.Номенклатура.ЕдиницаИзмерения КАК ЕдиницаХранения,
+	ТоварыНаСкладахОстатки.Номенклатура.ЕдиницаДляОтчетов КАК ЕдиницаДляОтчетов,
+	ТоварыНаСкладахОстатки.Номенклатура.КоэффициентЕдиницыДляОтчетов КАК КоэффициентЕдиницыДляОтчетов,
+	ТоварыНаСкладахОстатки.Номенклатура.СрокГодности КАК СрокГодности,
+	ТоварыНаСкладахОстатки.Номенклатура.ЕдиницаИзмеренияСрокаГодности КАК ЕдиницаИзмеренияСрокаГодности,
+	ТоварыНаСкладахОстатки.Характеристика КАК Характеристика,
+	ТоварыНаСкладахОстатки.ВНаличииОстаток КАК Количество,
+	ВЫРАЗИТЬ(ВЫБОР
+			КОГДА ТоварыНаСкладахОстатки.Номенклатура.ЕдиницаИзмеренияСрокаГодности = ЗНАЧЕНИЕ(Перечисление.ЕдиницыИзмеренияВремени.Час)
+				ТОГДА ВЫБОР
+						КОГДА ДОБАВИТЬКДАТЕ(ТоварыНаСкладахОстатки.Серия.ГоденДо, ЧАС, -ТоварыНаСкладахОстатки.Номенклатура.СрокГодности) &gt;= &amp;ТекущаяДата
+							ТОГДА 100
+						ИНАЧЕ ВЫБОР
+								КОГДА ВЫБОР
+										КОГДА ТоварыНаСкладахОстатки.Серия.ВидНоменклатуры.ТочностьУказанияСрокаГодностиСерии = ЗНАЧЕНИЕ(Перечисление.ТочностиУказанияСрокаГодности.СТочностьюДоЧасов)
+											ТОГДА ИСТИНА
+										ИНАЧЕ ЛОЖЬ
+									КОНЕЦ
+									ТОГДА ВЫБОР
+											КОГДА РАЗНОСТЬДАТ(ДОБАВИТЬКДАТЕ(ТоварыНаСкладахОстатки.Серия.ГоденДо, ЧАС, -ТоварыНаСкладахОстатки.Номенклатура.СрокГодности), ТоварыНаСкладахОстатки.Серия.ГоденДо, ЧАС) &gt; 0
+													И РАЗНОСТЬДАТ(&amp;ТекущаяДата, ТоварыНаСкладахОстатки.Серия.ГоденДо, ЧАС) &gt; 0
+												ТОГДА РАЗНОСТЬДАТ(&amp;ТекущаяДата, ТоварыНаСкладахОстатки.Серия.ГоденДо, ЧАС) / РАЗНОСТЬДАТ(ДОБАВИТЬКДАТЕ(ТоварыНаСкладахОстатки.Серия.ГоденДо, ЧАС, -ТоварыНаСкладахОстатки.Номенклатура.СрокГодности), ТоварыНаСкладахОстатки.Серия.ГоденДо, ЧАС) * 100
+											ИНАЧЕ 0
+										КОНЕЦ
+								ИНАЧЕ ВЫБОР
+										КОГДА РАЗНОСТЬДАТ(ДОБАВИТЬКДАТЕ(ТоварыНаСкладахОстатки.Серия.ГоденДо, ЧАС, -ТоварыНаСкладахОстатки.Номенклатура.СрокГодности), ТоварыНаСкладахОстатки.Серия.ГоденДо, ДЕНЬ) &gt; 0
+												И РАЗНОСТЬДАТ(&amp;ТекущаяДата, ТоварыНаСкладахОстатки.Серия.ГоденДо, ДЕНЬ) &gt; 0
+											ТОГДА РАЗНОСТЬДАТ(&amp;ТекущаяДата, ТоварыНаСкладахОстатки.Серия.ГоденДо, ДЕНЬ) / РАЗНОСТЬДАТ(ДОБАВИТЬКДАТЕ(ТоварыНаСкладахОстатки.Серия.ГоденДо, ЧАС, -ТоварыНаСкладахОстатки.Номенклатура.СрокГодности), ТоварыНаСкладахОстатки.Серия.ГоденДо, ДЕНЬ) * 100
+										ИНАЧЕ 0
+									КОНЕЦ
+							КОНЕЦ
+					КОНЕЦ
+			КОГДА ТоварыНаСкладахОстатки.Номенклатура.ЕдиницаИзмеренияСрокаГодности = ЗНАЧЕНИЕ(Перечисление.ЕдиницыИзмеренияВремени.Сутки)
+				ТОГДА ВЫБОР
+						КОГДА ДОБАВИТЬКДАТЕ(ТоварыНаСкладахОстатки.Серия.ГоденДо, ДЕНЬ, -ТоварыНаСкладахОстатки.Номенклатура.СрокГодности) &gt;= &amp;ТекущаяДата
+							ТОГДА 100
+						ИНАЧЕ ВЫБОР
+								КОГДА ВЫБОР
+										КОГДА ТоварыНаСкладахОстатки.Серия.ВидНоменклатуры.ТочностьУказанияСрокаГодностиСерии = ЗНАЧЕНИЕ(Перечисление.ТочностиУказанияСрокаГодности.СТочностьюДоЧасов)
+											ТОГДА ИСТИНА
+										ИНАЧЕ ЛОЖЬ
+									КОНЕЦ
+									ТОГДА ВЫБОР
+											КОГДА РАЗНОСТЬДАТ(ДОБАВИТЬКДАТЕ(ТоварыНаСкладахОстатки.Серия.ГоденДо, ДЕНЬ, -ТоварыНаСкладахОстатки.Номенклатура.СрокГодности), ТоварыНаСкладахОстатки.Серия.ГоденДо, ЧАС) &gt; 0
+													И РАЗНОСТЬДАТ(&amp;ТекущаяДата, ТоварыНаСкладахОстатки.Серия.ГоденДо, ЧАС) &gt; 0
+												ТОГДА РАЗНОСТЬДАТ(&amp;ТекущаяДата, ТоварыНаСкладахОстатки.Серия.ГоденДо, ЧАС) / РАЗНОСТЬДАТ(ДОБАВИТЬКДАТЕ(ТоварыНаСкладахОстатки.Серия.ГоденДо, ДЕНЬ, -ТоварыНаСкладахОстатки.Номенклатура.СрокГодности), ТоварыНаСкладахОстатки.Серия.ГоденДо, ЧАС) * 100
+											ИНАЧЕ 0
+										КОНЕЦ
+								ИНАЧЕ ВЫБОР
+										КОГДА РАЗНОСТЬДАТ(ДОБАВИТЬКДАТЕ(ТоварыНаСкладахОстатки.Серия.ГоденДо, ДЕНЬ, -ТоварыНаСкладахОстатки.Номенклатура.СрокГодности), ТоварыНаСкладахОстатки.Серия.ГоденДо, ДЕНЬ) &gt; 0
+												И РАЗНОСТЬДАТ(&amp;ТекущаяДата, ТоварыНаСкладахОстатки.Серия.ГоденДо, ДЕНЬ) &gt; 0
+											ТОГДА РАЗНОСТЬДАТ(&amp;ТекущаяДата, ТоварыНаСкладахОстатки.Серия.ГоденДо, ДЕНЬ) / РАЗНОСТЬДАТ(ДОБАВИТЬКДАТЕ(ТоварыНаСкладахОстатки.Серия.ГоденДо, ДЕНЬ, -ТоварыНаСкладахОстатки.Номенклатура.СрокГодности), ТоварыНаСкладахОстатки.Серия.ГоденДо, ДЕНЬ) * 100
+										ИНАЧЕ 0
+									КОНЕЦ
+							КОНЕЦ
+					КОНЕЦ
+			КОГДА ТоварыНаСкладахОстатки.Номенклатура.ЕдиницаИзмеренияСрокаГодности = ЗНАЧЕНИЕ(Перечисление.ЕдиницыИзмеренияВремени.Месяц)
+				ТОГДА ВЫБОР
+						КОГДА ДОБАВИТЬКДАТЕ(ТоварыНаСкладахОстатки.Серия.ГоденДо, МЕСЯЦ, -ТоварыНаСкладахОстатки.Номенклатура.СрокГодности) &gt;= &amp;ТекущаяДата
+							ТОГДА 100
+						ИНАЧЕ ВЫБОР
+								КОГДА ВЫБОР
+										КОГДА ТоварыНаСкладахОстатки.Серия.ВидНоменклатуры.ТочностьУказанияСрокаГодностиСерии = ЗНАЧЕНИЕ(Перечисление.ТочностиУказанияСрокаГодности.СТочностьюДоЧасов)
+											ТОГДА ИСТИНА
+										ИНАЧЕ ЛОЖЬ
+									КОНЕЦ
+									ТОГДА ВЫБОР
+											КОГДА РАЗНОСТЬДАТ(ДОБАВИТЬКДАТЕ(ТоварыНаСкладахОстатки.Серия.ГоденДо, МЕСЯЦ, -ТоварыНаСкладахОстатки.Номенклатура.СрокГодности), ТоварыНаСкладахОстатки.Серия.ГоденДо, ЧАС) &gt; 0
+													И РАЗНОСТЬДАТ(&amp;ТекущаяДата, ТоварыНаСкладахОстатки.Серия.ГоденДо, ЧАС) &gt; 0
+												ТОГДА РАЗНОСТЬДАТ(&amp;ТекущаяДата, ТоварыНаСкладахОстатки.Серия.ГоденДо, ЧАС) / РАЗНОСТЬДАТ(ДОБАВИТЬКДАТЕ(ТоварыНаСкладахОстатки.Серия.ГоденДо, МЕСЯЦ, -ТоварыНаСкладахОстатки.Номенклатура.СрокГодности), ТоварыНаСкладахОстатки.Серия.ГоденДо, ЧАС) * 100
+											ИНАЧЕ 0
+										КОНЕЦ
+								ИНАЧЕ ВЫБОР
+										КОГДА РАЗНОСТЬДАТ(ДОБАВИТЬКДАТЕ(ТоварыНаСкладахОстатки.Серия.ГоденДо, МЕСЯЦ, -ТоварыНаСкладахОстатки.Номенклатура.СрокГодности), ТоварыНаСкладахОстатки.Серия.ГоденДо, ДЕНЬ) &gt; 0
+												И РАЗНОСТЬДАТ(&amp;ТекущаяДата, ТоварыНаСкладахОстатки.Серия.ГоденДо, ДЕНЬ) &gt; 0
+											ТОГДА РАЗНОСТЬДАТ(&amp;ТекущаяДата, ТоварыНаСкладахОстатки.Серия.ГоденДо, ДЕНЬ) / РАЗНОСТЬДАТ(ДОБАВИТЬКДАТЕ(ТоварыНаСкладахОстатки.Серия.ГоденДо, МЕСЯЦ, -ТоварыНаСкладахОстатки.Номенклатура.СрокГодности), ТоварыНаСкладахОстатки.Серия.ГоденДо, ДЕНЬ) * 100
+										ИНАЧЕ 0
+									КОНЕЦ
+							КОНЕЦ
+					КОНЕЦ
+			КОГДА ТоварыНаСкладахОстатки.Номенклатура.ЕдиницаИзмеренияСрокаГодности = ЗНАЧЕНИЕ(Перечисление.ЕдиницыИзмеренияВремени.Год)
+				ТОГДА ВЫБОР
+						КОГДА ДОБАВИТЬКДАТЕ(ТоварыНаСкладахОстатки.Серия.ГоденДо, ГОД, -ТоварыНаСкладахОстатки.Номенклатура.СрокГодности) &gt;= &amp;ТекущаяДата
+							ТОГДА 100
+						ИНАЧЕ ВЫБОР
+								КОГДА ВЫБОР
+										КОГДА ТоварыНаСкладахОстатки.Серия.ВидНоменклатуры.ТочностьУказанияСрокаГодностиСерии = ЗНАЧЕНИЕ(Перечисление.ТочностиУказанияСрокаГодности.СТочностьюДоЧасов)
+											ТОГДА ИСТИНА
+										ИНАЧЕ ЛОЖЬ
+									КОНЕЦ
+									ТОГДА ВЫБОР
+											КОГДА РАЗНОСТЬДАТ(ДОБАВИТЬКДАТЕ(ТоварыНаСкладахОстатки.Серия.ГоденДо, ГОД, -ТоварыНаСкладахОстатки.Номенклатура.СрокГодности), ТоварыНаСкладахОстатки.Серия.ГоденДо, ЧАС) &gt; 0
+													И РАЗНОСТЬДАТ(&amp;ТекущаяДата, ТоварыНаСкладахОстатки.Серия.ГоденДо, ЧАС) &gt; 0
+												ТОГДА РАЗНОСТЬДАТ(&amp;ТекущаяДата, ТоварыНаСкладахОстатки.Серия.ГоденДо, ЧАС) / РАЗНОСТЬДАТ(ДОБАВИТЬКДАТЕ(ТоварыНаСкладахОстатки.Серия.ГоденДо, ГОД, -ТоварыНаСкладахОстатки.Номенклатура.СрокГодности), ТоварыНаСкладахОстатки.Серия.ГоденДо, ЧАС) * 100
+											ИНАЧЕ 0
+										КОНЕЦ
+								ИНАЧЕ ВЫБОР
+										КОГДА РАЗНОСТЬДАТ(ДОБАВИТЬКДАТЕ(ТоварыНаСкладахОстатки.Серия.ГоденДо, ГОД, -ТоварыНаСкладахОстатки.Номенклатура.СрокГодности), ТоварыНаСкладахОстатки.Серия.ГоденДо, ДЕНЬ) &gt; 0
+												И РАЗНОСТЬДАТ(&amp;ТекущаяДата, ТоварыНаСкладахОстатки.Серия.ГоденДо, ДЕНЬ) &gt; 0
+											ТОГДА РАЗНОСТЬДАТ(&amp;ТекущаяДата, ТоварыНаСкладахОстатки.Серия.ГоденДо, ДЕНЬ) / РАЗНОСТЬДАТ(ДОБАВИТЬКДАТЕ(ТоварыНаСкладахОстатки.Серия.ГоденДо, ГОД, -ТоварыНаСкладахОстатки.Номенклатура.СрокГодности), ТоварыНаСкладахОстатки.Серия.ГоденДо, ДЕНЬ) * 100
+										ИНАЧЕ 0
+									КОНЕЦ
+							КОНЕЦ
+					КОНЕЦ
+		КОНЕЦ КАК ЧИСЛО(5, 2)) КАК ОтносительныйОстатокСрокаГодности,
+	ВЫБОР
+		КОГДА РАЗНОСТЬДАТ(&amp;ТекущаяДата, ТоварыНаСкладахОстатки.Серия.ГоденДо, ДЕНЬ) &lt; 0
+			ТОГДА "Не годен"
+		ИНАЧЕ СТРОКА(РАЗНОСТЬДАТ(&amp;ТекущаяДата, ТоварыНаСкладахОстатки.Серия.ГоденДо, ДЕНЬ))
+	КОНЕЦ КАК ДнейДоПорчи,
+	СТРОКА(ТоварыНаСкладахОстатки.Номенклатура.СрокГодности) КАК СрокГодностиПредставление,
+	ПРЕДСТАВЛЕНИЕ(ТоварыНаСкладахОстатки.Номенклатура.ЕдиницаИзмеренияСрокаГодности) КАК ЕдиницаИзмеренияСрокаГодностиПредставление,
+	ВЫБОР
+		КОГДА &amp;ЗначениеПометки = НЕОПРЕДЕЛЕНО
+			ТОГДА ТоварыНаСкладахОстатки.Серия В (&amp;ВыбраннаяНоменклатура)
+		ИНАЧЕ &amp;ЗначениеПометки
+	КОНЕЦ КАК Пометка,
+	ТоварыНаСкладахОстатки.Склад КАК Склад
+ИЗ
+	РегистрНакопления.ТоварыНаСкладах.Остатки(
+			,
+			(Номенклатура.ВидНоменклатуры, Склад) В
+					(ВЫБРАТЬ
+						ПолитикиУчетаСерий.Ссылка КАК ВидНоменклатуры,
+						ПолитикиУчетаСерий.Склад КАК Склад
+					ИЗ
+						Справочник.ВидыНоменклатуры.ПолитикиУчетаСерий КАК ПолитикиУчетаСерий
+					ГДЕ
+						ПолитикиУчетаСерий.ПолитикаУчетаСерий.УчитыватьОстаткиСерий
+						И НЕ ПолитикиУчетаСерий.ПолитикаУчетаСерий.ТипПолитики = ЗНАЧЕНИЕ(Перечисление.ТипыПолитикУказанияСерий.АвторасчетПоFEFOОстатковСерий)
+						И ПолитикиУчетаСерий.Ссылка.ИспользоватьСрокГодностиСерии)
+				И Склад В (&amp;Склад) {((Номенклатура, Характеристика) В
+			    (ВЫБРАТЬ
+			        ОтборПоСегментуНоменклатуры.Номенклатура,
+			        ОтборПоСегментуНоменклатуры.Характеристика
+			    ИЗ
+			        ОтборПоСегментуНоменклатуры
+			    ГДЕ
+			        ОтборПоСегментуНоменклатуры.ИспользуетсяОтборПоСегментуНоменклатуры = &amp;ИспользуетсяОтборПоСегментуНоменклатуры)) КАК Поле2}) КАК ТоварыНаСкладахОстатки</QueryText>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">ОтносительныйОстатокСрокаГодности</dcsset:left>
+							<dcsset:comparisonType>LessOrEqual</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:decimal">0</dcsset:right>
+						</dcsset:item>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemField">
+							<dcsset:field>Склад</dcsset:field>
+							<dcsset:orderType>Asc</dcsset:orderType>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:OrderItemField">
+							<dcsset:field>Номенклатура.Наименование</dcsset:field>
+							<dcsset:orderType>Asc</dcsset:orderType>
+						</dcsset:item>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:item>
+							<dcsset:selection>
+								<dcsset:item>
+									<dcsset:field>ДнейДоПорчи</dcsset:field>
+								</dcsset:item>
+								<dcsset:item>
+									<dcsset:field>Количество</dcsset:field>
+								</dcsset:item>
+							</dcsset:selection>
+							<dcsset:filter>
+								<dcsset:item xsi:type="dcsset:FilterItemComparison">
+									<dcsset:left xsi:type="dcscor:Field">ОтносительныйОстатокСрокаГодности</dcsset:left>
+									<dcsset:comparisonType>LessOrEqual</dcsset:comparisonType>
+									<dcsset:right xsi:type="xs:decimal">0</dcsset:right>
+								</dcsset:item>
+							</dcsset:filter>
+							<dcsset:appearance>
+								<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+									<dcscor:parameter>ЦветТекста</dcscor:parameter>
+									<dcscor:value xsi:type="v8ui:Color">style:NegativeTextColor</dcscor:value>
+								</dcscor:item>
+							</dcsset:appearance>
+						</dcsset:item>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="Организация" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Организация</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Организации</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СписокПользователей" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список пользователей</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+			<Settings xsi:type="v8:TypeDescription">
+				<v8:Type>cfg:CatalogRef.Пользователи</v8:Type>
+			</Settings>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="УстановитьПометки" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить пометки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить пометки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>УстановитьПометки</Action>
+		</Command>
+		<Command name="СнятьПометки" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Снять пометки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Снять пометки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.UncheckAll</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>СнятьПометки</Action>
+		</Command>
+		<Command name="ОформитьПеремещение" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Оформить перемещение</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Оформить перемещение</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОформитьПеремещение</Action>
+		</Command>
+		<Command name="СохранитьНастройки" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить настройки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить настройки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СохранитьНастройки</Action>
+		</Command>
+		<Command name="СнятьПометки1" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Снять пометки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Снять пометки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.UncheckAll</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>СнятьПометки</Action>
+		</Command>
+		<Command name="УстановитьПометки1" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить пометки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить пометки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.CheckAll</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>УстановитьПометки</Action>
+		</Command>
+	</Commands>
+</Form>
