@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<Catalog uuid="c4ff6f57-5e47-4ecb-9572-453aa4eb2370">
+		<InternalInfo>
+			<xr:GeneratedType name="CatalogObject.КлассификаторБанков" category="Object">
+				<xr:TypeId>cf54675c-9477-431a-98c7-9c6f194ff11d</xr:TypeId>
+				<xr:ValueId>41312b2b-c6d0-46df-8032-6e1ffdffe779</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogRef.КлассификаторБанков" category="Ref">
+				<xr:TypeId>73e834d0-90cc-4a54-96e8-1b89040b1d77</xr:TypeId>
+				<xr:ValueId>b6436324-6407-4338-829b-7b020eb821de</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogSelection.КлассификаторБанков" category="Selection">
+				<xr:TypeId>a29abc78-bdf6-4fe1-90e5-07b6463aceb7</xr:TypeId>
+				<xr:ValueId>4ff3138e-e3bf-4df5-8dc2-44beb3999855</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogList.КлассификаторБанков" category="List">
+				<xr:TypeId>87540a49-e28c-480b-8539-0dae1332349f</xr:TypeId>
+				<xr:ValueId>3f39591f-07cd-4c3b-ac4a-b4067834ea99</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogManager.КлассификаторБанков" category="Manager">
+				<xr:TypeId>e045c573-a58a-4d10-acd2-ba7b151bdccc</xr:TypeId>
+				<xr:ValueId>d7a08ca3-4c3f-4b50-94c4-c699b7a4bd0b</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>КлассификаторБанков</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>b56f25d2-72a9-4d80-8998-77ac3097c873</ExtendedConfigurationObject>
+			<CodeLength>9</CodeLength>
+			<DescriptionLength>100</DescriptionLength>
+			<CodeType>String</CodeType>
+			<CodeAllowedLength>Fixed</CodeAllowedLength>
+		</Properties>
+		<ChildObjects>
+			<Attribute uuid="9b2181b6-72b3-4201-b003-0eef71930a29">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ГородМеждународный</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>55649242-42fd-468f-a1e4-f6cd8871f7a4</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>50</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="396f5fa9-a54d-4939-8315-3e760da9ecd8">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>КоррСчет</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>03bd775a-e0a1-4205-82ce-6068e73ad134</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>20</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="2fcb5787-be2b-4143-ab2a-6db6805ba66a">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Город</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>40bed47b-7754-4a70-b51a-47385fd46e83</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>50</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="720a1017-be7e-454d-9bf5-58ec1168bc14">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Страна</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>d253aa54-a447-44aa-bb13-82fd1ce22af4</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:CatalogRef.СтраныМира</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="17ebe5e9-3284-462f-82b7-2e8d02a621e8">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>МеждународноеНаименование</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>8936f114-7a0e-4a4c-8752-ccacab410778</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>100</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="f431608b-1f25-4e62-b4d2-30f05976ced7">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>СВИФТБИК</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>37e3d914-643e-4963-b4a0-7bc6727c0c9b</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>11</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="c39eb396-b8cc-45bb-9f25-0e05e3340a27">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Адрес</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>773ef914-5e7e-4ec1-bcdb-b2d111b560e6</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>500</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="fc54cd02-1974-4e3f-97f9-90f5f855d3e1">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>АдресМеждународный</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>980e0883-cd8f-48c8-896f-ef185650f5c2</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>500</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Properties>
+			</Attribute>
+		</ChildObjects>
+	</Catalog>
+</MetaDataObject>

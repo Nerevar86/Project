@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<Enum uuid="baaccfe2-642b-471a-af04-4617822971d4">
+		<InternalInfo>
+			<xr:GeneratedType name="EnumRef.ТипыБанковскихСчетов" category="Ref">
+				<xr:TypeId>76179fea-643c-4c25-9f19-df1ec293351f</xr:TypeId>
+				<xr:ValueId>4273d17d-3d3e-41bd-ba8c-208de8061b99</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumManager.ТипыБанковскихСчетов" category="Manager">
+				<xr:TypeId>4a356ac3-b264-48cb-a036-9c191e5e66ee</xr:TypeId>
+				<xr:ValueId>9547335c-89af-44f6-a349-13be60641289</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumList.ТипыБанковскихСчетов" category="List">
+				<xr:TypeId>719771b8-7326-463e-be3e-15131ecb4b32</xr:TypeId>
+				<xr:ValueId>73796b5d-88f3-4705-8b08-0d5c30386718</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>ТипыБанковскихСчетов</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>30825806-865e-4da6-82a0-36fda9773e79</ExtendedConfigurationObject>
+		</Properties>
+		<ChildObjects>
+			<EnumValue uuid="bc1516fe-91bd-45ce-b47a-a8e3fdac327a">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Прочий</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>c4e5ebd0-3eae-4db9-a831-2ef7e5622442</ExtendedConfigurationObject>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="4778eef1-729e-46ab-be91-4bd0a9f328f9">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Расчетный</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>29dba80c-3a21-44fb-9b76-884de5dc624e</ExtendedConfigurationObject>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="b6599b58-39e2-4fe4-80c0-1b69dad661af">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Транзитный</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>06deb22c-e983-4803-9de7-5c56c6d7c8df</ExtendedConfigurationObject>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="827f2b7f-01b3-4ada-8430-ed1113dd1a30">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Депозитный</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>9243675f-8739-47c9-808f-49d62f5072aa</ExtendedConfigurationObject>
+				</Properties>
+			</EnumValue>
+		</ChildObjects>
+	</Enum>
+</MetaDataObject>

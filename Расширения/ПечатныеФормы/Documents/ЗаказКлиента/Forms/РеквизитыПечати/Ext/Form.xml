@@ -1,0 +1,760 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Реквизиты печати</v8:content>
+		</v8:item>
+	</Title>
+	<AutoTitle>false</AutoTitle>
+	<Group>Horizontal</Group>
+	<CommandBarLocation>Bottom</CommandBarLocation>
+	<CommandSet>
+		<ExcludedCommand>Close</ExcludedCommand>
+		<ExcludedCommand>CustomizeForm</ExcludedCommand>
+	</CommandSet>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<HorizontalAlign>Right</HorizontalAlign>
+		<ChildItems>
+			<Button name="ОК" id="15">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<CommandName>0</CommandName>
+				<ExtendedTooltip name="ОКРасширеннаяПодсказка" id="27"/>
+			</Button>
+			<Button name="Отмена" id="16">
+				<Type>CommandBarButton</Type>
+				<CommandName>0</CommandName>
+				<ExtendedTooltip name="ОтменаРасширеннаяПодсказка" id="28"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<ChildItems>
+		<UsualGroup name="ГруппаПечать" id="21">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Печать</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаПечатьРасширеннаяПодсказка" id="29"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаДоставка" id="71">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Доставка</v8:content>
+						</v8:item>
+					</Title>
+					<TitleFont ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ExtendedTooltip name="ГруппаДоставкаРасширеннаяПодсказка" id="72"/>
+					<ChildItems>
+						<InputField name="АдресДоставки" id="9">
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<MaxWidth>97</MaxWidth>
+							<DropListButton>true</DropListButton>
+							<ChoiceListButton>true</ChoiceListButton>
+							<ContextMenu name="АдресДоставкиКонтекстноеМеню" id="10"/>
+							<ExtendedTooltip name="АдресДоставкиРасширеннаяПодсказка" id="30"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаРеквизитыПечати" id="22">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Реквизиты печати</v8:content>
+						</v8:item>
+					</Title>
+					<Group>Horizontal</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаРеквизитыПечатиРасширеннаяПодсказка" id="31"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаПечатьЛево" id="8">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Печать лево</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаПечатьЛевоРасширеннаяПодсказка" id="32"/>
+							<ChildItems>
+								<UsualGroup name="ГруппаРеквизитыПокупателя" id="69">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Покупатель</v8:content>
+										</v8:item>
+									</Title>
+									<TitleFont ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+									<GroupVerticalAlign>Bottom</GroupVerticalAlign>
+									<Group>Vertical</Group>
+									<VerticalAlign>Bottom</VerticalAlign>
+									<Behavior>Usual</Behavior>
+									<Representation>NormalSeparation</Representation>
+									<United>false</United>
+									<ExtendedTooltip name="ГруппаРеквизитыПокупателяРасширеннаяПодсказка" id="70"/>
+									<ChildItems>
+										<InputField name="БанковскийСчетКонтрагента" id="2">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Счет контрагента</v8:content>
+												</v8:item>
+											</Title>
+											<ChoiceParameterLinks>
+												<xr:Link>
+													<xr:Name>Отбор.Владелец</xr:Name>
+													<xr:DataPath xsi:type="xs:string">9</xr:DataPath>
+													<xr:ValueChange>Clear</xr:ValueChange>
+												</xr:Link>
+											</ChoiceParameterLinks>
+											<ContextMenu name="БанковскийСчетКонтрагентаКонтекстноеМеню" id="3"/>
+											<ExtendedTooltip name="БанковскийСчетКонтрагентаРасширеннаяПодсказка" id="33"/>
+										</InputField>
+										<InputField name="Грузополучатель" id="13">
+											<ChoiceParameterLinks>
+												<xr:Link>
+													<xr:Name>Отбор.Партнер</xr:Name>
+													<xr:DataPath xsi:type="xs:string">7</xr:DataPath>
+													<xr:ValueChange>Clear</xr:ValueChange>
+												</xr:Link>
+											</ChoiceParameterLinks>
+											<ContextMenu name="ГрузополучательКонтекстноеМеню" id="14"/>
+											<ExtendedTooltip name="ГрузополучательРасширеннаяПодсказка" id="34"/>
+										</InputField>
+										<InputField name="БанковскийСчетГрузополучателя" id="6">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Счет грузополучателя</v8:content>
+												</v8:item>
+											</Title>
+											<ChoiceParameterLinks>
+												<xr:Link>
+													<xr:Name>Отбор.Владелец</xr:Name>
+													<xr:DataPath xsi:type="xs:string">6</xr:DataPath>
+													<xr:ValueChange>Clear</xr:ValueChange>
+												</xr:Link>
+											</ChoiceParameterLinks>
+											<ContextMenu name="БанковскийСчетГрузополучателяКонтекстноеМеню" id="7"/>
+											<ExtendedTooltip name="БанковскийСчетГрузополучателяРасширеннаяПодсказка" id="35"/>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаДополнительно" id="73">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Дополнительно</v8:content>
+										</v8:item>
+									</Title>
+									<TitleFont ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа дополнительно</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Vertical</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>NormalSeparation</Representation>
+									<United>false</United>
+									<ExtendedTooltip name="ГруппаДополнительноРасширеннаяПодсказка" id="74"/>
+									<ChildItems>
+										<InputField name="СрокПоставки" id="75">
+											<DataPath>СрокПоставки</DataPath>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="СрокПоставкиКонтекстноеМеню" id="76"/>
+											<ExtendedTooltip name="СрокПоставкиРасширеннаяПодсказка" id="77"/>
+										</InputField>
+										<InputField name="УсловияПоставки" id="78">
+											<DataPath>УсловияПоставки</DataPath>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="УсловияПоставкиКонтекстноеМеню" id="79"/>
+											<ExtendedTooltip name="УсловияПоставкиРасширеннаяПодсказка" id="80"/>
+										</InputField>
+										<InputField name="ДопУсловияПоставки" id="81">
+											<DataPath>ДопУсловияПоставки</DataPath>
+											<MultiLine>true</MultiLine>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="ДопУсловияПоставкиКонтекстноеМеню" id="82"/>
+											<ExtendedTooltip name="ДопУсловияПоставкиРасширеннаяПодсказка" id="83"/>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаПечатьПраво" id="1">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Печать право</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаПечатьПравоРасширеннаяПодсказка" id="36"/>
+							<ChildItems>
+								<UsualGroup name="ГруппаРеквизитыПродавца" id="61">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Продавец</v8:content>
+										</v8:item>
+									</Title>
+									<TitleFont ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+									<GroupVerticalAlign>Bottom</GroupVerticalAlign>
+									<Group>Vertical</Group>
+									<VerticalAlign>Bottom</VerticalAlign>
+									<Behavior>Usual</Behavior>
+									<Representation>NormalSeparation</Representation>
+									<United>false</United>
+									<ExtendedTooltip name="ГруппаРеквизитыПродавцаРасширеннаяПодсказка" id="62"/>
+									<ChildItems>
+										<InputField name="БанковскийСчет" id="44">
+											<ChoiceParameterLinks>
+												<xr:Link>
+													<xr:Name>Отбор.Владелец</xr:Name>
+													<xr:DataPath xsi:type="xs:string">10</xr:DataPath>
+													<xr:ValueChange>Clear</xr:ValueChange>
+												</xr:Link>
+											</ChoiceParameterLinks>
+											<ContextMenu name="БанковскийСчетКонтекстноеМеню" id="45"/>
+											<ExtendedTooltip name="БанковскийСчетРасширеннаяПодсказка" id="46"/>
+										</InputField>
+										<InputField name="Грузоотправитель" id="11">
+											<ChoiceParameters>
+												<app:item name="Отбор.Партнер">
+													<app:value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation/>
+														<Value xsi:type="xr:DesignTimeRef">Catalog.Партнеры.НашеПредприятие</Value>
+													</app:value>
+												</app:item>
+											</ChoiceParameters>
+											<ContextMenu name="ГрузоотправительКонтекстноеМеню" id="12"/>
+											<ExtendedTooltip name="ГрузоотправительРасширеннаяПодсказка" id="37"/>
+										</InputField>
+										<InputField name="БанковскийСчетГрузоотправителя" id="4">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Счет грузоотправителя</v8:content>
+												</v8:item>
+											</Title>
+											<ChoiceParameterLinks>
+												<xr:Link>
+													<xr:Name>Отбор.Владелец</xr:Name>
+													<xr:DataPath xsi:type="xs:string">5</xr:DataPath>
+													<xr:ValueChange>Clear</xr:ValueChange>
+												</xr:Link>
+											</ChoiceParameterLinks>
+											<ContextMenu name="БанковскийСчетГрузоотправителяКонтекстноеМеню" id="5"/>
+											<ExtendedTooltip name="БанковскийСчетГрузоотправителяРасширеннаяПодсказка" id="38"/>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаПодписи" id="47">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Подписи</v8:content>
+										</v8:item>
+									</Title>
+									<TitleFont ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+									<GroupVerticalAlign>Bottom</GroupVerticalAlign>
+									<Group>Vertical</Group>
+									<VerticalAlign>Bottom</VerticalAlign>
+									<Behavior>Usual</Behavior>
+									<Representation>NormalSeparation</Representation>
+									<United>false</United>
+									<ExtendedTooltip name="ГруппаПодписиРасширеннаяПодсказка" id="48"/>
+									<ChildItems>
+										<InputField name="Руководитель" id="17">
+											<ChoiceParameterLinks>
+												<xr:Link>
+													<xr:Name>Отбор.Дата</xr:Name>
+													<xr:DataPath xsi:type="xs:string">11</xr:DataPath>
+													<xr:ValueChange>DontChange</xr:ValueChange>
+												</xr:Link>
+												<xr:Link>
+													<xr:Name>Отбор.Владелец</xr:Name>
+													<xr:DataPath xsi:type="xs:string">10</xr:DataPath>
+													<xr:ValueChange>DontChange</xr:ValueChange>
+												</xr:Link>
+											</ChoiceParameterLinks>
+											<ChoiceParameters>
+												<app:item name="Отбор.ОтветственноеЛицо">
+													<app:value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation/>
+														<Value xsi:type="xr:DesignTimeRef">Enum.ОтветственныеЛицаОрганизаций.EnumValue.Руководитель</Value>
+													</app:value>
+												</app:item>
+											</ChoiceParameters>
+											<ContextMenu name="РуководительКонтекстноеМеню" id="18"/>
+											<ExtendedTooltip name="РуководительРасширеннаяПодсказка" id="39"/>
+										</InputField>
+										<InputField name="ГлавныйБухгалтер" id="19">
+											<ChoiceParameterLinks>
+												<xr:Link>
+													<xr:Name>Отбор.Дата</xr:Name>
+													<xr:DataPath xsi:type="xs:string">11</xr:DataPath>
+													<xr:ValueChange>DontChange</xr:ValueChange>
+												</xr:Link>
+												<xr:Link>
+													<xr:Name>Отбор.Владелец</xr:Name>
+													<xr:DataPath xsi:type="xs:string">10</xr:DataPath>
+													<xr:ValueChange>DontChange</xr:ValueChange>
+												</xr:Link>
+											</ChoiceParameterLinks>
+											<ChoiceParameters>
+												<app:item name="Отбор.ОтветственноеЛицо">
+													<app:value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation/>
+														<Value xsi:type="xr:DesignTimeRef">Enum.ОтветственныеЛицаОрганизаций.EnumValue.ГлавныйБухгалтер</Value>
+													</app:value>
+												</app:item>
+											</ChoiceParameters>
+											<ContextMenu name="ГлавныйБухгалтерКонтекстноеМеню" id="20"/>
+											<ExtendedTooltip name="ГлавныйБухгалтерРасширеннаяПодсказка" id="40"/>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаНазначениеПлатежа" id="23">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Назначение платежа:</v8:content>
+						</v8:item>
+					</Title>
+					<TitleFont ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+					<Group>Horizontal</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ExtendedTooltip name="ГруппаНазначениеПлатежаРасширеннаяПодсказка" id="41"/>
+					<ChildItems>
+						<Button name="ПерезаполнитьНазначениеПлатежа" id="24">
+							<Type>UsualButton</Type>
+							<CommandName>0</CommandName>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Заполнить</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="ПерезаполнитьНазначениеПлатежаРасширеннаяПодсказка" id="42"/>
+						</Button>
+						<InputField name="НазначениеПлатежа" id="25">
+							<TitleLocation>None</TitleLocation>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<MaxWidth>101</MaxWidth>
+							<MultiLine>true</MultiLine>
+							<ContextMenu name="НазначениеПлатежаКонтекстноеМеню" id="26"/>
+							<ExtendedTooltip name="НазначениеПлатежаРасширеннаяПодсказка" id="43"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="УсловияПоставки" id="1000001">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Условия поставки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.ITS_Инкотермс</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ДопУсловияПоставки" id="1000002">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Доп. условия поставки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="СрокПоставки" id="1000003">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Срок поставки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<BaseForm version="2.18">
+		<Title>
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Реквизиты печати</v8:content>
+			</v8:item>
+		</Title>
+		<AutoTitle>false</AutoTitle>
+		<Group>Horizontal</Group>
+		<CommandBarLocation>Bottom</CommandBarLocation>
+		<CommandSet>
+			<ExcludedCommand>Close</ExcludedCommand>
+			<ExcludedCommand>CustomizeForm</ExcludedCommand>
+		</CommandSet>
+		<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+			<HorizontalAlign>Right</HorizontalAlign>
+			<ChildItems>
+				<Button name="ОК" id="15">
+					<Type>CommandBarButton</Type>
+					<DefaultButton>true</DefaultButton>
+					<CommandName>0</CommandName>
+					<ExtendedTooltip name="ОКРасширеннаяПодсказка" id="27"/>
+				</Button>
+				<Button name="Отмена" id="16">
+					<Type>CommandBarButton</Type>
+					<CommandName>0</CommandName>
+					<ExtendedTooltip name="ОтменаРасширеннаяПодсказка" id="28"/>
+				</Button>
+			</ChildItems>
+		</AutoCommandBar>
+		<ChildItems>
+			<UsualGroup name="ГруппаПечать" id="21">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Печать</v8:content>
+					</v8:item>
+				</Title>
+				<Group>Vertical</Group>
+				<Behavior>Usual</Behavior>
+				<Representation>None</Representation>
+				<ShowTitle>false</ShowTitle>
+				<ExtendedTooltip name="ГруппаПечатьРасширеннаяПодсказка" id="29"/>
+				<ChildItems>
+					<UsualGroup name="ГруппаДоставка" id="71">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Доставка</v8:content>
+							</v8:item>
+						</Title>
+						<TitleFont ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+						<Group>Vertical</Group>
+						<Behavior>Usual</Behavior>
+						<Representation>None</Representation>
+						<ExtendedTooltip name="ГруппаДоставкаРасширеннаяПодсказка" id="72"/>
+						<ChildItems>
+							<InputField name="АдресДоставки" id="9">
+								<AutoMaxWidth>false</AutoMaxWidth>
+								<MaxWidth>97</MaxWidth>
+								<DropListButton>true</DropListButton>
+								<ChoiceListButton>true</ChoiceListButton>
+								<ContextMenu name="АдресДоставкиКонтекстноеМеню" id="10"/>
+								<ExtendedTooltip name="АдресДоставкиРасширеннаяПодсказка" id="30"/>
+							</InputField>
+						</ChildItems>
+					</UsualGroup>
+					<UsualGroup name="ГруппаРеквизитыПечати" id="22">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Реквизиты печати</v8:content>
+							</v8:item>
+						</Title>
+						<Group>Horizontal</Group>
+						<Behavior>Usual</Behavior>
+						<Representation>None</Representation>
+						<ShowTitle>false</ShowTitle>
+						<ExtendedTooltip name="ГруппаРеквизитыПечатиРасширеннаяПодсказка" id="31"/>
+						<ChildItems>
+							<UsualGroup name="ГруппаПечатьЛево" id="8">
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Печать лево</v8:content>
+									</v8:item>
+								</Title>
+								<Group>Vertical</Group>
+								<Behavior>Usual</Behavior>
+								<Representation>None</Representation>
+								<ShowTitle>false</ShowTitle>
+								<ExtendedTooltip name="ГруппаПечатьЛевоРасширеннаяПодсказка" id="32"/>
+								<ChildItems>
+									<UsualGroup name="ГруппаРеквизитыПокупателя" id="69">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Покупатель</v8:content>
+											</v8:item>
+										</Title>
+										<TitleFont ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+										<GroupVerticalAlign>Bottom</GroupVerticalAlign>
+										<Group>Vertical</Group>
+										<VerticalAlign>Bottom</VerticalAlign>
+										<Behavior>Usual</Behavior>
+										<Representation>NormalSeparation</Representation>
+										<United>false</United>
+										<ExtendedTooltip name="ГруппаРеквизитыПокупателяРасширеннаяПодсказка" id="70"/>
+										<ChildItems>
+											<InputField name="БанковскийСчетКонтрагента" id="2">
+												<Title>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Счет контрагента</v8:content>
+													</v8:item>
+												</Title>
+												<ChoiceParameterLinks>
+													<xr:Link>
+														<xr:Name>Отбор.Владелец</xr:Name>
+														<xr:DataPath xsi:type="xs:string">9</xr:DataPath>
+														<xr:ValueChange>Clear</xr:ValueChange>
+													</xr:Link>
+												</ChoiceParameterLinks>
+												<ContextMenu name="БанковскийСчетКонтрагентаКонтекстноеМеню" id="3"/>
+												<ExtendedTooltip name="БанковскийСчетКонтрагентаРасширеннаяПодсказка" id="33"/>
+											</InputField>
+											<InputField name="Грузополучатель" id="13">
+												<ChoiceParameterLinks>
+													<xr:Link>
+														<xr:Name>Отбор.Партнер</xr:Name>
+														<xr:DataPath xsi:type="xs:string">7</xr:DataPath>
+														<xr:ValueChange>Clear</xr:ValueChange>
+													</xr:Link>
+												</ChoiceParameterLinks>
+												<ContextMenu name="ГрузополучательКонтекстноеМеню" id="14"/>
+												<ExtendedTooltip name="ГрузополучательРасширеннаяПодсказка" id="34"/>
+											</InputField>
+											<InputField name="БанковскийСчетГрузополучателя" id="6">
+												<Title>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Счет грузополучателя</v8:content>
+													</v8:item>
+												</Title>
+												<ChoiceParameterLinks>
+													<xr:Link>
+														<xr:Name>Отбор.Владелец</xr:Name>
+														<xr:DataPath xsi:type="xs:string">6</xr:DataPath>
+														<xr:ValueChange>Clear</xr:ValueChange>
+													</xr:Link>
+												</ChoiceParameterLinks>
+												<ContextMenu name="БанковскийСчетГрузополучателяКонтекстноеМеню" id="7"/>
+												<ExtendedTooltip name="БанковскийСчетГрузополучателяРасширеннаяПодсказка" id="35"/>
+											</InputField>
+										</ChildItems>
+									</UsualGroup>
+								</ChildItems>
+							</UsualGroup>
+							<UsualGroup name="ГруппаПечатьПраво" id="1">
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Печать право</v8:content>
+									</v8:item>
+								</Title>
+								<Group>Vertical</Group>
+								<Behavior>Usual</Behavior>
+								<Representation>None</Representation>
+								<ShowTitle>false</ShowTitle>
+								<ExtendedTooltip name="ГруппаПечатьПравоРасширеннаяПодсказка" id="36"/>
+								<ChildItems>
+									<UsualGroup name="ГруппаРеквизитыПродавца" id="61">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Продавец</v8:content>
+											</v8:item>
+										</Title>
+										<TitleFont ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+										<GroupVerticalAlign>Bottom</GroupVerticalAlign>
+										<Group>Vertical</Group>
+										<VerticalAlign>Bottom</VerticalAlign>
+										<Behavior>Usual</Behavior>
+										<Representation>NormalSeparation</Representation>
+										<United>false</United>
+										<ExtendedTooltip name="ГруппаРеквизитыПродавцаРасширеннаяПодсказка" id="62"/>
+										<ChildItems>
+											<InputField name="БанковскийСчет" id="44">
+												<ChoiceParameterLinks>
+													<xr:Link>
+														<xr:Name>Отбор.Владелец</xr:Name>
+														<xr:DataPath xsi:type="xs:string">10</xr:DataPath>
+														<xr:ValueChange>Clear</xr:ValueChange>
+													</xr:Link>
+												</ChoiceParameterLinks>
+												<ContextMenu name="БанковскийСчетКонтекстноеМеню" id="45"/>
+												<ExtendedTooltip name="БанковскийСчетРасширеннаяПодсказка" id="46"/>
+											</InputField>
+											<InputField name="Грузоотправитель" id="11">
+												<ChoiceParameters>
+													<app:item name="Отбор.Партнер">
+														<app:value xsi:type="FormChoiceListDesTimeValue">
+															<Presentation/>
+															<Value xsi:type="xr:DesignTimeRef">Catalog.Партнеры.НашеПредприятие</Value>
+														</app:value>
+													</app:item>
+												</ChoiceParameters>
+												<ContextMenu name="ГрузоотправительКонтекстноеМеню" id="12"/>
+												<ExtendedTooltip name="ГрузоотправительРасширеннаяПодсказка" id="37"/>
+											</InputField>
+											<InputField name="БанковскийСчетГрузоотправителя" id="4">
+												<Title>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Счет грузоотправителя</v8:content>
+													</v8:item>
+												</Title>
+												<ChoiceParameterLinks>
+													<xr:Link>
+														<xr:Name>Отбор.Владелец</xr:Name>
+														<xr:DataPath xsi:type="xs:string">5</xr:DataPath>
+														<xr:ValueChange>Clear</xr:ValueChange>
+													</xr:Link>
+												</ChoiceParameterLinks>
+												<ContextMenu name="БанковскийСчетГрузоотправителяКонтекстноеМеню" id="5"/>
+												<ExtendedTooltip name="БанковскийСчетГрузоотправителяРасширеннаяПодсказка" id="38"/>
+											</InputField>
+										</ChildItems>
+									</UsualGroup>
+									<UsualGroup name="ГруппаПодписи" id="47">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Подписи</v8:content>
+											</v8:item>
+										</Title>
+										<TitleFont ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+										<GroupVerticalAlign>Bottom</GroupVerticalAlign>
+										<Group>Vertical</Group>
+										<VerticalAlign>Bottom</VerticalAlign>
+										<Behavior>Usual</Behavior>
+										<Representation>NormalSeparation</Representation>
+										<United>false</United>
+										<ExtendedTooltip name="ГруппаПодписиРасширеннаяПодсказка" id="48"/>
+										<ChildItems>
+											<InputField name="Руководитель" id="17">
+												<ChoiceParameterLinks>
+													<xr:Link>
+														<xr:Name>Отбор.Дата</xr:Name>
+														<xr:DataPath xsi:type="xs:string">11</xr:DataPath>
+														<xr:ValueChange>DontChange</xr:ValueChange>
+													</xr:Link>
+													<xr:Link>
+														<xr:Name>Отбор.Владелец</xr:Name>
+														<xr:DataPath xsi:type="xs:string">10</xr:DataPath>
+														<xr:ValueChange>DontChange</xr:ValueChange>
+													</xr:Link>
+												</ChoiceParameterLinks>
+												<ChoiceParameters>
+													<app:item name="Отбор.ОтветственноеЛицо">
+														<app:value xsi:type="FormChoiceListDesTimeValue">
+															<Presentation/>
+															<Value xsi:type="xr:DesignTimeRef">Enum.ОтветственныеЛицаОрганизаций.EnumValue.Руководитель</Value>
+														</app:value>
+													</app:item>
+												</ChoiceParameters>
+												<ContextMenu name="РуководительКонтекстноеМеню" id="18"/>
+												<ExtendedTooltip name="РуководительРасширеннаяПодсказка" id="39"/>
+											</InputField>
+											<InputField name="ГлавныйБухгалтер" id="19">
+												<ChoiceParameterLinks>
+													<xr:Link>
+														<xr:Name>Отбор.Дата</xr:Name>
+														<xr:DataPath xsi:type="xs:string">11</xr:DataPath>
+														<xr:ValueChange>DontChange</xr:ValueChange>
+													</xr:Link>
+													<xr:Link>
+														<xr:Name>Отбор.Владелец</xr:Name>
+														<xr:DataPath xsi:type="xs:string">10</xr:DataPath>
+														<xr:ValueChange>DontChange</xr:ValueChange>
+													</xr:Link>
+												</ChoiceParameterLinks>
+												<ChoiceParameters>
+													<app:item name="Отбор.ОтветственноеЛицо">
+														<app:value xsi:type="FormChoiceListDesTimeValue">
+															<Presentation/>
+															<Value xsi:type="xr:DesignTimeRef">Enum.ОтветственныеЛицаОрганизаций.EnumValue.ГлавныйБухгалтер</Value>
+														</app:value>
+													</app:item>
+												</ChoiceParameters>
+												<ContextMenu name="ГлавныйБухгалтерКонтекстноеМеню" id="20"/>
+												<ExtendedTooltip name="ГлавныйБухгалтерРасширеннаяПодсказка" id="40"/>
+											</InputField>
+										</ChildItems>
+									</UsualGroup>
+								</ChildItems>
+							</UsualGroup>
+						</ChildItems>
+					</UsualGroup>
+					<UsualGroup name="ГруппаНазначениеПлатежа" id="23">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Назначение платежа:</v8:content>
+							</v8:item>
+						</Title>
+						<TitleFont ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+						<Group>Horizontal</Group>
+						<Behavior>Usual</Behavior>
+						<Representation>None</Representation>
+						<ExtendedTooltip name="ГруппаНазначениеПлатежаРасширеннаяПодсказка" id="41"/>
+						<ChildItems>
+							<Button name="ПерезаполнитьНазначениеПлатежа" id="24">
+								<Type>UsualButton</Type>
+								<CommandName>0</CommandName>
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Заполнить</v8:content>
+									</v8:item>
+								</Title>
+								<ExtendedTooltip name="ПерезаполнитьНазначениеПлатежаРасширеннаяПодсказка" id="42"/>
+							</Button>
+							<InputField name="НазначениеПлатежа" id="25">
+								<TitleLocation>None</TitleLocation>
+								<AutoMaxWidth>false</AutoMaxWidth>
+								<MaxWidth>101</MaxWidth>
+								<MultiLine>true</MultiLine>
+								<ContextMenu name="НазначениеПлатежаКонтекстноеМеню" id="26"/>
+								<ExtendedTooltip name="НазначениеПлатежаРасширеннаяПодсказка" id="43"/>
+							</InputField>
+						</ChildItems>
+					</UsualGroup>
+				</ChildItems>
+			</UsualGroup>
+		</ChildItems>
+		<Attributes/>
+	</BaseForm>
+</Form>
