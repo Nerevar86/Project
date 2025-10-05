@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.19">
+	<Constant uuid="9ec40e5d-ed47-4958-a04c-8a268d80fea9">
+		<InternalInfo>
+			<xr:GeneratedType name="ConstantManager.ВалютаРегламентированногоУчета" category="Manager">
+				<xr:TypeId>bb8791d6-a115-4c4f-a7b4-af10d7e17793</xr:TypeId>
+				<xr:ValueId>16af16cb-0aa0-42fb-801b-7939723be60a</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="ConstantValueManager.ВалютаРегламентированногоУчета" category="ValueManager">
+				<xr:TypeId>f38a67d3-95d3-43e2-b63e-cf19735e5584</xr:TypeId>
+				<xr:ValueId>2de814af-5d7f-4dcb-b87b-5188c93e1518</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="ConstantValueKey.ВалютаРегламентированногоУчета" category="ValueKey">
+				<xr:TypeId>c06a4bcb-6c88-481c-ab6a-e9c8c85b83d7</xr:TypeId>
+				<xr:ValueId>175f278f-dee4-4f5c-bcd8-0cb2bfb313ef</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>ВалютаРегламентированногоУчета</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>2789dce5-49b2-483e-8bfd-e279b3c8e1d7</ExtendedConfigurationObject>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Валюты</v8:Type>
+			</Type>
+		</Properties>
+	</Constant>
+</MetaDataObject>
