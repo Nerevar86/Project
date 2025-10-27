@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.19">
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
 	<Configuration uuid="56b85844-97d2-43a0-82cf-f9fbb730c65e">
 		<InternalInfo>
 			<xr:ContainedObject>
@@ -30,6 +30,14 @@
 				<xr:ClassId>fb282519-d103-4dd3-bc12-cb271d631dfc</xr:ClassId>
 				<xr:ObjectId>71eb8e9a-3894-41ef-a34a-ecca1b324ae2</xr:ObjectId>
 			</xr:ContainedObject>
+			<xr:PropertyState>
+				<xr:Property>CommandInterface</xr:Property>
+				<xr:State>Extended</xr:State>
+			</xr:PropertyState>
+			<xr:PropertyState>
+				<xr:Property>MainSectionCommandInterface</xr:Property>
+				<xr:State>Extended</xr:State>
+			</xr:PropertyState>
 		</InternalInfo>
 		<Properties>
 			<ObjectBelonging>Adopted</ObjectBelonging>
@@ -69,8 +77,24 @@
 		<ChildObjects>
 			<Language>Русский</Language>
 			<Subsystem>IT_Okna_Интеграция1С</Subsystem>
+			<StyleItem>ФонУправляющегоПоля</StyleItem>
+			<StyleItem>ГруппаВариантовОтчетовЦвет</StyleItem>
+			<StyleItem>ЦветФонаВыделения</StyleItem>
+			<StyleItem>ИтогиФон</StyleItem>
 			<CommonPicture>IT_Okna_ЛоготипОсновной32</CommonPicture>
 			<CommonPicture>СостоянияДокумента</CommonPicture>
+			<CommonPicture>СерииНоменклатурыКолонкаСтатусов</CommonPicture>
+			<CommonPicture>СтатусыУказанияСерий</CommonPicture>
+			<CommonPicture>ЗаполнитьПоШаблону</CommonPicture>
+			<CommonPicture>Внимание16</CommonPicture>
+			<CommonPicture>Отчеты</CommonPicture>
+			<CommonPicture>СостоянияСтрок</CommonPicture>
+			<CommonPicture>Набор</CommonPicture>
+			<CommonPicture>Наборы</CommonPicture>
+			<CommonPicture>ЗаполнитьФорму</CommonPicture>
+			<CommonPicture>Органайзер</CommonPicture>
+			<CommonPicture>ВРасписаниеРабочегоЦентраВнесеныРучныеИзменения</CommonPicture>
+			<CommonPicture>ИсключитьИзНастройкиФормированияПроводок</CommonPicture>
 			<Role>IT_Okna_ПолныеПрава</Role>
 			<DefinedType>Цена</DefinedType>
 			<DefinedType>ДенежнаяСуммаНеотрицательная</DefinedType>
@@ -102,7 +126,12 @@
 			<Enum>СтатусыДоговоровКонтрагентов</Enum>
 			<Enum>ВариантыОформленияПродажи</Enum>
 			<Enum>ПорядокРасчетов</Enum>
+			<Enum>ГруппировкиЗатратВПроизводствеБезЗаказа</Enum>
+			<Enum>СтатусыДействияВидовЦен</Enum>
+			<Enum>СпособыДоставки</Enum>
+			<Enum>ВариантыВыбытияМаркируемойПродукции</Enum>
 			<DataProcessor>ИнтеграцияITOkna</DataProcessor>
+			<DataProcessor>ЖурналДокументовПроизводства</DataProcessor>
 			<InformationRegister>IT_Okna_СоответствиеНоменклатуры</InformationRegister>
 			<InformationRegister>IT_Okna_СоответствиеКонтрагентов</InformationRegister>
 			<ChartOfCharacteristicTypes>СтатьиРасходов</ChartOfCharacteristicTypes>

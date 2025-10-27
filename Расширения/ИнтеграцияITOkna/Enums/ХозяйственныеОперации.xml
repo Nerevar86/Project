@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.19">
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
 	<Enum uuid="6c905db0-b26d-420a-9650-b5c4a367dd8b">
 		<InternalInfo>
 			<xr:GeneratedType name="EnumRef.ХозяйственныеОперации" category="Ref">
@@ -47,6 +47,60 @@
 					<Name>ВыпускПродукцииНаСклад</Name>
 					<Comment/>
 					<ExtendedConfigurationObject>e9771ada-9c1d-4fa5-935e-8fe635d7a9a6</ExtendedConfigurationObject>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="af15b10f-1461-45e6-b87a-04eaf66ff8ad">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>РеализацияЧерезКомиссионера</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>8880d304-daf7-4345-ad8d-c81bc5d994b7</ExtendedConfigurationObject>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="4aaab87b-833d-48b9-96fc-01f0608f088d">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>РеализацияЧерезКомиссионераБезПереходаПраваСобственности</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>f24e8e16-21ad-4eeb-a73d-06152c4d9a1e</ExtendedConfigurationObject>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="22c70ea5-e0b0-4a25-901e-159b7016c590">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ПереходПраваСобственности</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>c2db50c6-a927-4ffc-95af-c11758cdaaf5</ExtendedConfigurationObject>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="300025bd-79a7-4054-bb98-9719f3a5e87c">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ПередачаНаКомиссию</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>a606d3e5-4a59-4b2c-9d3d-5976f5c778cf</ExtendedConfigurationObject>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="985235d5-9228-4cbf-a654-4596b456d4b8">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>РеализацияКлиентуРеглУчет</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>3299776f-a304-476e-a0d9-a9132b128869</ExtendedConfigurationObject>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="60ebc92c-6757-4bd9-bd7c-a269f761af40">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>РеализацияБезПереходаПраваСобственности</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>0789d7c2-8020-4d52-a305-445f9faa9b76</ExtendedConfigurationObject>
 				</Properties>
 			</EnumValue>
 		</ChildObjects>

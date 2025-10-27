@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<DataProcessor uuid="23b9980d-dd4b-49f9-82d7-7fe7d714738f">
+		<InternalInfo>
+			<xr:GeneratedType name="DataProcessorObject.ЖурналДокументовПроизводства" category="Object">
+				<xr:TypeId>b6196c18-11a6-4d43-b4a6-272640bf5370</xr:TypeId>
+				<xr:ValueId>b39aafc2-e9c1-4131-b3ae-0793e4b83e91</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DataProcessorManager.ЖурналДокументовПроизводства" category="Manager">
+				<xr:TypeId>5503fa15-dd20-4486-a874-250512d3d7ff</xr:TypeId>
+				<xr:ValueId>479c6aea-4c70-4728-8883-74199a1b20c7</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>ЖурналДокументовПроизводства</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>8c1d89e1-ff57-446f-959e-7250a584d063</ExtendedConfigurationObject>
+		</Properties>
+		<ChildObjects>
+			<Form>СписокДокументов</Form>
+		</ChildObjects>
+	</DataProcessor>
+</MetaDataObject>
