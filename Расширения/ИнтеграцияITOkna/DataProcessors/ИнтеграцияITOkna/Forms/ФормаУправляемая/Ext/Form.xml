@@ -326,6 +326,9 @@
 														<ContextMenu name="СписокЗаказовУправлениеПоискомКонтекстноеМеню" id="30"/>
 														<ExtendedTooltip name="СписокЗаказовУправлениеПоискомРасширеннаяПодсказка" id="31"/>
 													</SearchControlAddition>
+													<Events>
+														<Event name="OnChange">СписокЗаказовПриИзменении</Event>
+													</Events>
 													<ChildItems>
 														<CheckBoxField name="СписокЗаказовПометка" id="123">
 															<DataPath>СписокЗаказов.Пометка</DataPath>

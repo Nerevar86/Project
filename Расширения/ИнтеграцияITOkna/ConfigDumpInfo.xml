@@ -52,7 +52,7 @@
 		<Metadata name="DataProcessor.ИнтеграцияITOkna.Form.СоответствиеНоменклатуры" id="e024e355-0376-48eb-bac4-a00a95acf433" configVersion="074cb1f60a2fe82010ebeb05f658b9a358145670"/>
 		<Metadata name="DataProcessor.ИнтеграцияITOkna.Form.СоответствиеНоменклатуры.Form" id="e024e355-0376-48eb-bac4-a00a95acf433.0" configVersion="0cd77036051beb952a94946ca78113a2b5a72287"/>
 		<Metadata name="DataProcessor.ИнтеграцияITOkna.Form.ФормаУправляемая" id="84dbe5c0-0098-4f6c-aa17-e48b8db84d86" configVersion="57ef51aec529ada06826a89e8d3985481c17e111"/>
-		<Metadata name="DataProcessor.ИнтеграцияITOkna.Form.ФормаУправляемая.Form" id="84dbe5c0-0098-4f6c-aa17-e48b8db84d86.0" configVersion="da1dcee15636932783277335f9405f9801c07c13"/>
+		<Metadata name="DataProcessor.ИнтеграцияITOkna.Form.ФормаУправляемая.Form" id="84dbe5c0-0098-4f6c-aa17-e48b8db84d86.0" configVersion="710f4386d58acc6f3c9a9b128709269d1d6a6d45"/>
 		<Metadata name="DataProcessor.ИнтеграцияITOkna.ManagerModule" id="7becd8a2-9e38-474d-8ace-477d4b29db5d.2" configVersion="c19a2908c656d3dbbbd14e282bf7dd6c40513837"/>
 		<Metadata name="DefinedType.ДенежнаяСуммаЛюбогоЗнака" id="25ecd36d-3f42-48b8-a4b7-9b44d2cefe32" configVersion="faef7b74c33ce2b4a03cc9030839a57913f90f51"/>
 		<Metadata name="DefinedType.ДенежнаяСуммаНеотрицательная" id="f308f9ef-ebde-4a93-94ea-bb8e4927bc8d" configVersion="3ea778a380dc481f9f1d83df148a2c92dbab4b17"/>
@@ -117,12 +117,13 @@
 		<Metadata name="Document.ПроизводствоБезЗаказа.Form.ФормаДокумента.Form" id="6376be96-6cde-48f5-a79a-e259af646dec.0" configVersion="f9b84b90b88313d41867f9258a7a276bce8e5ce1"/>
 		<Metadata name="Document.ПроизводствоБезЗаказа.Form.ФормаСписка" id="e1ea1c23-7a1b-4305-a1b3-646542e529d2" configVersion="9da5ff65d496cc203f964f7328432923cff4c56c"/>
 		<Metadata name="Document.ПроизводствоБезЗаказа.Form.ФормаСписка.Form" id="e1ea1c23-7a1b-4305-a1b3-646542e529d2.0" configVersion="2994885db011f4f60e74d5966e6bc82c1f344ecd"/>
-		<Metadata name="Document.РеализацияТоваровУслуг" id="3962b77f-cb95-440d-99f4-e5d5767a6f0b" configVersion="0ab629dcecf00a29652620c5da6fd343798e9201">
+		<Metadata name="Document.РеализацияТоваровУслуг" id="3962b77f-cb95-440d-99f4-e5d5767a6f0b" configVersion="dd31bb00d4343901af9aff0f09bba0af02782114">
 			<Metadata name="Document.РеализацияТоваровУслуг.Attribute.ИдЗаказаITOkna" id="744c1d85-35c7-4c73-9800-bb00e2adcc9b"/>
 			<Metadata name="Document.РеализацияТоваровУслуг.Attribute.ЗаказКлиента" id="ffbaa0a4-bb07-481f-8f9e-7440c4db6ac7"/>
 		</Metadata>
 		<Metadata name="Document.РеализацияТоваровУслуг.Form.ФормаДокумента" id="7ad097f6-8bc0-47f1-81f6-99d5195e4c54" configVersion="2edd9c6dba0b9ccd28735c18c5fb8d682f5378c1"/>
 		<Metadata name="Document.РеализацияТоваровУслуг.Form.ФормаДокумента.Form" id="7ad097f6-8bc0-47f1-81f6-99d5195e4c54.0" configVersion="45eb9a1cda1a56f22ee73efc41fc6dcd5ce932f3"/>
+		<Metadata name="Document.РеализацияТоваровУслуг.ObjectModule" id="3962b77f-cb95-440d-99f4-e5d5767a6f0b.0" configVersion="b8546cf46af3c191c4638c65d0859ebbfe67782e"/>
 		<Metadata name="Enum.ВариантыВыбытияМаркируемойПродукции" id="d6f97fe0-b89d-4309-be05-d7791c2fe337" configVersion="9b9b991453a0a6f1ac4a0f2e9d15aa5fa434ba75">
 			<Metadata name="Enum.ВариантыВыбытияМаркируемойПродукции.EnumValue.ИспользованиеПокупателемДляСобственныхНужд" id="631013c8-ea84-49fb-b607-bdca28e7e123"/>
 		</Metadata>
