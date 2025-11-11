@@ -52,7 +52,7 @@
 		<Metadata name="DataProcessor.ИнтеграцияITOkna.Form.СоответствиеНоменклатуры" id="e024e355-0376-48eb-bac4-a00a95acf433" configVersion="074cb1f60a2fe82010ebeb05f658b9a358145670"/>
 		<Metadata name="DataProcessor.ИнтеграцияITOkna.Form.СоответствиеНоменклатуры.Form" id="e024e355-0376-48eb-bac4-a00a95acf433.0" configVersion="0cd77036051beb952a94946ca78113a2b5a72287"/>
 		<Metadata name="DataProcessor.ИнтеграцияITOkna.Form.ФормаУправляемая" id="84dbe5c0-0098-4f6c-aa17-e48b8db84d86" configVersion="57ef51aec529ada06826a89e8d3985481c17e111"/>
-		<Metadata name="DataProcessor.ИнтеграцияITOkna.Form.ФормаУправляемая.Form" id="84dbe5c0-0098-4f6c-aa17-e48b8db84d86.0" configVersion="710f4386d58acc6f3c9a9b128709269d1d6a6d45"/>
+		<Metadata name="DataProcessor.ИнтеграцияITOkna.Form.ФормаУправляемая.Form" id="84dbe5c0-0098-4f6c-aa17-e48b8db84d86.0" configVersion="91bce41ec3f92dbfeeb4222d6c6f5defd25bf4f4"/>
 		<Metadata name="DataProcessor.ИнтеграцияITOkna.ManagerModule" id="7becd8a2-9e38-474d-8ace-477d4b29db5d.2" configVersion="c19a2908c656d3dbbbd14e282bf7dd6c40513837"/>
 		<Metadata name="DefinedType.ДенежнаяСуммаЛюбогоЗнака" id="25ecd36d-3f42-48b8-a4b7-9b44d2cefe32" configVersion="faef7b74c33ce2b4a03cc9030839a57913f90f51"/>
 		<Metadata name="DefinedType.ДенежнаяСуммаНеотрицательная" id="f308f9ef-ebde-4a93-94ea-bb8e4927bc8d" configVersion="3ea778a380dc481f9f1d83df148a2c92dbab4b17"/>
